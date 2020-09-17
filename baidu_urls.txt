@@ -1,0 +1,2 @@
+https://jobsstroustrup.github.io/2020/09/17/my-first-post-with-hexo/
+https://jobsstroustrup.github.io/2020/09/16/blog-open-source/
