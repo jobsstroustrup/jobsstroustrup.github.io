@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Today&#39;s Recommended TED</title>
+      <link href="/2020/09/20/today-s-recommended-ted/"/>
+      <url>/2020/09/20/today-s-recommended-ted/</url>
+      
+        <content type="html"><![CDATA[<h2 id="This-is-the-second-TED-talks-I’ve-recommended"><a href="#This-is-the-second-TED-talks-I’ve-recommended" class="headerlink" title="This is the second TED talks I’ve recommended."></a>This is the second TED talks I’ve recommended.</h2><p>Watch the video through <a href="https://www.ted.com/talks/matt_trombley_the_beauty_and_complexity_of_finding_common_ground?language=zh-cn#t-476505" target="_blank" rel="noopener">https://www.ted.com/talks/matt_trombley_the_beauty_and_complexity_of_finding_common_ground?language=zh-cn#t-476505</a></p><iframe height="498" width="510" src="https://www.ted.com/talks/matt_trombley_the_beauty_and_complexity_of_finding_common_ground?language=zh-cn#t-476505" frameborder="0" allowfullscreen=""></iframe>People are different. Typically, with similar interests, people can get together; with conflicting values, people will split apart. Most people always stay in their circle, holding their original beliefs and reinforcing their world views. But to achieve better relationships with more people, to get out of your comfort zone, you have to learn to negotiate and find common grounds with others. This is not easy for most times. It's easier to get rage and disagree with others than to calm down and have a thorough thinking about why others would think like that, why I would think like this and whether there are possibilities to live together without forced changes on either's beliefs. To find common grounds, the first is to show extravagent grace to others. "Extravagent" means that even if sometimes others' behavior offends us, we still need to keep calm and try to communicate. In this more and more divided world, people are easy to get into what is called AGONISM. If people love someone, they agree to all he/she does or believes. If people disagree with someone, they hate or fear him/her. Only based on common grounds, can people calmly discuss with others and try to understand. And only with grace rather than explosion with anger, can people try to find common grounds. Lastly, we still need to be cautious about the degree of tolerance and grace. Single or several unconcious offenses can be tolerated, but intentional, frequent and illegal offenses need to be handled through laws.<table>  <tbody><tr>    <td><img width="100" src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://jobsstroustrup.github.io/medias/reward/alipay.bmp"></td>    <td><img width="100" src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://jobsstroustrup.github.io/medias/reward/wechat.bmp"></td>    <td><img width="100" src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://jobsstroustrup.github.io/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> TED </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> TED </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>My First Post with Hexo</title>
       <link href="/2020/09/17/my-first-post-with-hexo/"/>
       <url>/2020/09/17/my-first-post-with-hexo/</url>
