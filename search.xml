@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Recommended TED on 0921_2020</title>
+      <link href="/2020/09/21/recommended-ted-on-0921-2020/"/>
+      <url>/2020/09/21/recommended-ted-on-0921-2020/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Today’s-Topic-Is-About-Journalists"><a href="#Today’s-Topic-Is-About-Journalists" class="headerlink" title="Today’s Topic Is About Journalists"></a>Today’s Topic Is About Journalists</h2><p>Watch today’s recommended TED at: <a href="https://www.ted.com/talks/jad_abumrad_how_dolly_parton_led_me_to_an_epiphany?language=zh-cn#t-778143" target="_blank" rel="noopener">https://www.ted.com/talks/jad_abumrad_how_dolly_parton_led_me_to_an_epiphany?language=zh-cn#t-778143</a><br>The speaker used to find wonders to please his readers, but afterwards, he found this could not satisfy his ambition for journalism. To get what people concerns more accurately, he began to concentrate on people’s signs while in interview. It was throught the experience that he got to know the importance of journalists as bridges between interviewees and others including journalists themselves. Based on understanding of interviewees, can journalists find “the third”–new things or ideas generated when two people get in touch.<br>By the way, I really like his vivid video style.</p><table>  <tbody><tr>    <td><img width="100" src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://jobsstroustrup.github.io/medias/reward/alipay.bmp"></td>    <td><img width="100" src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://jobsstroustrup.github.io/medias/reward/wechat.bmp"></td>    <td><img width="100" src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://jobsstroustrup.github.io/medias/reward/zan.png"></td>     </tr></tbody></table><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> TED </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> TED </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Today&#39;s Recommended TED</title>
       <link href="/2020/09/20/today-s-recommended-ted/"/>
       <url>/2020/09/20/today-s-recommended-ted/</url>

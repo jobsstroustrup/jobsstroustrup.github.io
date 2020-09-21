@@ -1,3 +1,4 @@
+https://jobsstroustrup.github.io/2020/09/21/recommended-ted-on-0921-2020/
 https://jobsstroustrup.github.io/2020/09/20/today-s-recommended-ted/
 https://jobsstroustrup.github.io/2020/09/17/my-first-post-with-hexo/
 https://jobsstroustrup.github.io/2020/09/16/blog-open-source/
