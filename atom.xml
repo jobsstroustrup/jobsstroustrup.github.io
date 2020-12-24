@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jobsstroustrup.github.io/"/>
-  <updated>2020-12-20T07:22:34.916Z</updated>
+  <updated>2020-12-24T01:40:03.417Z</updated>
   <id>https://jobsstroustrup.github.io/</id>
   
   <author>
@@ -17,11 +17,38 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Regular Expression to Find Specific Sentence</title>
+    <link href="https://jobsstroustrup.github.io/2020/12/21/regular-expression-to-find-specific-sentence/"/>
+    <id>https://jobsstroustrup.github.io/2020/12/21/regular-expression-to-find-specific-sentence/</id>
+    <published>2020-12-21T09:14:00.000Z</published>
+    <updated>2020-12-24T01:40:03.417Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Python has already provided us with function “finditer” and “findiall”. Users could design the pattern they want as below.&lt;/p&gt;
+&lt;p&gt;read
+        
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="https://jobsstroustrup.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://jobsstroustrup.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Prediction on 2021 Real Estates in China</title>
     <link href="https://jobsstroustrup.github.io/2020/12/20/prediction-on-2021-real-estates-in-china/"/>
     <id>https://jobsstroustrup.github.io/2020/12/20/prediction-on-2021-real-estates-in-china/</id>
     <published>2020-12-19T16:54:06.000Z</published>
-    <updated>2020-12-20T07:22:34.916Z</updated>
+    <updated>2020-12-21T09:15:29.220Z</updated>
     
     <summary type="html">
     
@@ -494,28 +521,6 @@
         
         
           &lt;h2 id=&quot;Today’s-Topic-Is-About-Steroids&quot;&gt;&lt;a href=&quot;#Today’s-Topic-Is-About-Steroids&quot; class=&quot;headerlink&quot; title=&quot;Today’s Topic Is About
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Recommended TED on 10232020</title>
-    <link href="https://jobsstroustrup.github.io/2020/10/23/recommended-ted-on-10232020/"/>
-    <id>https://jobsstroustrup.github.io/2020/10/23/recommended-ted-on-10232020/</id>
-    <published>2020-10-23T15:27:57.000Z</published>
-    <updated>2020-10-25T03:02:11.899Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Today’s-Topic-Is-About-Balancing-Between-Positive-and-Negative-Emotions&quot;&gt;&lt;a
         
       
     
