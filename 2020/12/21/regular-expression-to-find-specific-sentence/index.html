@@ -9,7 +9,8 @@
     <meta name="keywords" content="Regular Expression to Find Specific Sentence, Today&#39;s Meteorology Modern Physics Computer Big Data Jobs Stroustrup">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="by4WIfnwLVEmozZdnhHjoDc3W-kdm5vHdA2gV0CLKMk">
-    <meta name="description" content="Python has already provided us with function “finditer” and “findiall”. Users could design the pattern they want as belo">
+    <meta name="description" content="First let’s do some review about reading and writing txt filesread data in txt file(many lines), as below
+write data to ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -772,14 +773,14 @@
                     
                     <div class="info-break-policy">
                         <i class="fa fa-file-word-o fa-fw"></i>Word Count:&nbsp;&nbsp;
-                        83
+                        378
                     </div>
                     
 
                     
                     <div class="info-break-policy">
                         <i class="fa fa-clock-o fa-fw"></i>Read Times:&nbsp;&nbsp;
-                        1 Min
+                        2 Min
                     </div>
                     
                 
@@ -796,9 +797,27 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Python has already provided us with function “finditer” and “findiall”. Users could design the pattern they want as below.</p>
-<p>read data in txt file(many lines), as below<br>_posts/post_name/readlines.png</p>
-<p><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="readlines.png" alt=""></p>
+                <p>First let’s do some review about reading and writing txt files<br>read data in txt file(many lines), as below<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="readlines.png" alt=""></p>
+<p>write data to txt file, as below (pay attention that if “douban.txt” hasn’t been created, then the code will automatically create this txt file):<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="write1.png" alt=""><br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="write2.png" alt=""><br>And if we want to write data in txt files by lines, we need to add “\n” to at the end of each line.</p>
+<p>Python has already provided us with function “finditer” and “findiall”. We should “import re” at the beginning.</p>
+<ol>
+<li><p>Finditer:<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="finditer1.png" alt=""><br>Or use finditer with function “re.compile”<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="finditer2.png" alt=""><br>A coding example: find all patterns of emails in a very huge txt file(we need to define patterns of emails at first, number/characters+@+number/characters/“.”)<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="finditer3.png" alt=""><br>If we directly print(m), because m is a special kind of structure, it’s not purely emails. So we get the index of start and end position, and then use index in string to print or write only email addresses.</p>
+</li>
+<li><p>function “findiall”<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="findiall1.png" alt=""><br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="findiall2.png" alt=""><br>We use the pattern defined before in the coding example, but change “finditer “ to “findiall”, then we get the following for “print(m_bundle)”<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="findiall3.png" alt=""><br>We didn’t get the whole emails, but only the email enterprises. Finally, I found out that it is because these parentheses we used in “patterns”.<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="findiall4.png" alt=""><br>After deleting all parentheses in “pattern”, we get<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="findiall5.png" alt=""><br>So my conclusion is that square brackets won’t influence the result. Only parentheses would change.<br>The final version is<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="findiall6.png" alt=""></p>
+</li>
+</ol>
+<p>Supplements: common used regular expressions.<br>refer to : <a href="https://blog.csdn.net/weixin_40583388/article/details/78458610" target="_blank" rel="noopener">https://blog.csdn.net/weixin_40583388/article/details/78458610</a></p>
+<p>use label to add local pictures, test:</p>
+<img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="/2020/12/21/regular-expression-to-find-specific-sentence/findiall6.png" title="This is an image">
+
+<p>use label to add online pictures, test:</p>
+<img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="http://www.viemu.com/vi-vim-cheat-sheet.gif" width="200" height="400" title="vi-vim-cheat-sheet">
+
+<p>use html to add local picture , test:<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="findiall.png" width="50%" height="50%" title="拼写检查工具Grammarly." alt="拼写检查工具Grammarly."><br>use html to add online picture, test:<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="http://www.viemu.com/vi-vim-cheat-sheet.gif" width="50%" height="50%" title="拼写检查工具Grammarly." alt="拼写检查工具Grammarly."></p>
+<p>use CDN to add pictures,test: after uploading to media library, we have the picture’s online url, like :<a href="https://res.cloudinary.com/jobsstroustrup/image/upload/v1608813108/findiall6_fgnve3.png" target="_blank" rel="noopener">https://res.cloudinary.com/jobsstroustrup/image/upload/v1608813108/findiall6_fgnve3.png</a><br>now we can use either label or html to add the picure.<br>label:</p>
+<img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://res.cloudinary.com/jobsstroustrup/image/upload/v1608813108/findiall6_fgnve3.png" width="200" height="400" title="vi-vim-cheat-sheet">
+
+<p>html:<br><img src="https://cdn.jsdelivr.net/gh/shw2018/cdn@1.0/sakura/img/loader/orange.progress-bar-stripe-loader.svg" data-original="https://res.cloudinary.com/jobsstroustrup/image/upload/v1608813108/findiall6_fgnve3.png" width="50%" height="50%" title="拼写检查工具Grammarly." alt="拼写检查工具Grammarly."></p>
 <script>
         document.querySelectorAll('.github-emoji')
           .forEach(el => {
@@ -1326,7 +1345,8 @@
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            Python has already provided us with function “finditer” and “findiall”. Users could design the pattern they want as belo
+                            First let’s do some review about reading and writing txt filesread data in txt file(many lines), as below
+write data to 
                         
                     </div>
                     <div class="publish-info">
@@ -1574,7 +1594,7 @@
 
             
                 &nbsp; | &nbsp;MyWordCount:&nbsp;
-                <span class="white-color">10.4k</span> words
+                <span class="white-color">10.7k</span> words
             
 
             

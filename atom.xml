@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jobsstroustrup.github.io/"/>
-  <updated>2020-12-24T01:40:03.417Z</updated>
+  <updated>2020-12-24T12:37:07.169Z</updated>
   <id>https://jobsstroustrup.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://jobsstroustrup.github.io/2020/12/21/regular-expression-to-find-specific-sentence/"/>
     <id>https://jobsstroustrup.github.io/2020/12/21/regular-expression-to-find-specific-sentence/</id>
     <published>2020-12-21T09:14:00.000Z</published>
-    <updated>2020-12-24T01:40:03.417Z</updated>
+    <updated>2020-12-24T12:37:07.169Z</updated>
     
     <summary type="html">
     
@@ -29,8 +29,7 @@
       
         
         
-          &lt;p&gt;Python has already provided us with function “finditer” and “findiall”. Users could design the pattern they want as below.&lt;/p&gt;
-&lt;p&gt;read
+          &lt;p&gt;First let’s do some review about reading and writing txt files&lt;br&gt;read data in txt file(many lines), as below&lt;br&gt;&lt;img
         
       
     
