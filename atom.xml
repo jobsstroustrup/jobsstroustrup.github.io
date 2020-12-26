@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jobsstroustrup.github.io/"/>
-  <updated>2020-12-24T12:54:21.272Z</updated>
+  <updated>2020-12-26T01:31:01.987Z</updated>
   <id>https://jobsstroustrup.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Recommended TED on 12262020</title>
+    <link href="https://jobsstroustrup.github.io/2020/12/26/recommended-ted-on-12262020/"/>
+    <id>https://jobsstroustrup.github.io/2020/12/26/recommended-ted-on-12262020/</id>
+    <published>2020-12-26T01:25:44.000Z</published>
+    <updated>2020-12-26T01:31:01.987Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;test: coding highlight&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;import os
+print(os.path)&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre class=&quot;line-numbers language-python&quot;&gt;&lt;code
+        
+      
+    
+    </summary>
+    
+      <category term="TED" scheme="https://jobsstroustrup.github.io/categories/TED/"/>
+    
+    
+      <category term="TED" scheme="https://jobsstroustrup.github.io/tags/TED/"/>
+    
+  </entry>
   
   <entry>
     <title>Regular Expression to Find Specific Sentence</title>
@@ -73,7 +103,7 @@
     <link href="https://jobsstroustrup.github.io/2020/12/15/knowledge-summary-rigid-body/"/>
     <id>https://jobsstroustrup.github.io/2020/12/15/knowledge-summary-rigid-body/</id>
     <published>2020-12-14T16:05:11.000Z</published>
-    <updated>2020-12-25T01:54:25.038Z</updated>
+    <updated>2020-12-25T02:15:16.223Z</updated>
     
     <summary type="html">
     
@@ -498,28 +528,6 @@
         
         
           &lt;h2 id=&quot;Today’s-Topic-Is-Required-time-and-process-to-produce-vaccines&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Recommended TED on 10252020</title>
-    <link href="https://jobsstroustrup.github.io/2020/10/25/recommended-ted-on-10252020/"/>
-    <id>https://jobsstroustrup.github.io/2020/10/25/recommended-ted-on-10252020/</id>
-    <published>2020-10-25T03:19:10.000Z</published>
-    <updated>2020-10-25T09:37:50.080Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Today’s-Topic-Is-About-Steroids&quot;&gt;&lt;a href=&quot;#Today’s-Topic-Is-About-Steroids&quot; class=&quot;headerlink&quot; title=&quot;Today’s Topic Is About
         
       
     

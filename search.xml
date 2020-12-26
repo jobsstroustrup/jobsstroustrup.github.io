@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Recommended TED on 12262020</title>
+      <link href="/2020/12/26/recommended-ted-on-12262020/"/>
+      <url>/2020/12/26/recommended-ted-on-12262020/</url>
+      
+        <content type="html"><![CDATA[<p>test: coding highlight</p><pre><code>import osprint(os.path)</code></pre><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> os<span class="token keyword">print</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>path<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><pre class="line-numbers language-C++"><code class="language-C++">lalala;cout<<p;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> TED </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> TED </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Regular Expression to Find Specific Sentence</title>
       <link href="/2020/12/21/regular-expression-to-find-specific-sentence/"/>
       <url>/2020/12/21/regular-expression-to-find-specific-sentence/</url>
@@ -58,7 +83,7 @@
       <link href="/2020/12/15/knowledge-summary-rigid-body/"/>
       <url>/2020/12/15/knowledge-summary-rigid-body/</url>
       
-        <content type="html"><![CDATA[<h2 id="Theoretical-Analyses-on-Rigid-Body"><a href="#Theoretical-Analyses-on-Rigid-Body" class="headerlink" title="Theoretical Analyses on Rigid Body"></a>Theoretical Analyses on Rigid Body</h2><p>Regarding to Galilean transformations, in a non-relative coordinates, spatial coordinates and time coordinates are independent. Though transformations between systems with only tranlational motions are trivial, relative rotation can bring about some interesting results.</p><p>We let a masspoint be at (X,Y,Z) in background coordinates with unit vectors $$^$$. Its location is designated by (x,y,z) in the other coordinates which has rotations compared to the background coordinates, with. We define that derivatives with tilde notes only calculate the changing of $ \alpha $ </p><p>$$\alpha$$<br>5$\alpha$</p><p>test: coding highlight</p><pre><code>import osprint(os.path)</code></pre><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> os<span class="token keyword">print</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>path<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+        <content type="html"><![CDATA[<h2 id="Theoretical-Analyses-on-Rigid-Body"><a href="#Theoretical-Analyses-on-Rigid-Body" class="headerlink" title="Theoretical Analyses on Rigid Body"></a>Theoretical Analyses on Rigid Body</h2><p>Regarding to Galilean transformations, in a non-relative coordinates, spatial coordinates and time coordinates are independent. Though transformations between systems with only tranlational motions are trivial, relative rotation can bring about some interesting results.</p><p>We let a masspoint be at (X,Y,Z) in background coordinates with unit vectors $$^$$. Its location is designated by (x,y,z) in the other coordinates which has rotations compared to the background coordinates, with. We define that derivatives with tilde notes only calculate the changing of $ \alpha $ </p><p>$$\alpha$$<br>5$\alpha$</p><p>test: coding highlight</p><pre><code>import osprint(os.path)</code></pre><pre class="line-numbers language-python"><code class="language-python"><span class="token keyword">import</span> os<span class="token keyword">print</span><span class="token punctuation">(</span>os<span class="token punctuation">.</span>path<span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><pre class="line-numbers language-C++"><code class="language-C++">lalala;cout<<p;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
       <categories>
