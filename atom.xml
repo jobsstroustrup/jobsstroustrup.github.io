@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jobsstroustrup.github.io/"/>
-  <updated>2020-12-31T13:03:06.835Z</updated>
+  <updated>2021-01-15T12:48:43.948Z</updated>
   <id>https://jobsstroustrup.github.io/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Reflection on Control of Drugs</title>
+    <link href="https://jobsstroustrup.github.io/2021/01/15/reflection-on-control-of-drugs/"/>
+    <id>https://jobsstroustrup.github.io/2021/01/15/reflection-on-control-of-drugs/</id>
+    <published>2021-01-15T12:35:46.000Z</published>
+    <updated>2021-01-15T12:48:43.948Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Hi， a test.&lt;/p&gt;
+&lt;script&gt;
+        document.querySelectorAll(&#39;.github-emoji&#39;)
+          .forEach(el =&gt; {
+            if (!el.dataset.src)
+        
+      
+    
+    </summary>
+    
+      <category term="Contemplation" scheme="https://jobsstroustrup.github.io/categories/Contemplation/"/>
+    
+    
+      <category term="Contemplation" scheme="https://jobsstroustrup.github.io/tags/Contemplation/"/>
+    
+  </entry>
   
   <entry>
     <title>Dance with Uncertainty</title>
@@ -99,7 +129,7 @@
     <link href="https://jobsstroustrup.github.io/2020/12/20/prediction-on-2021-real-estates-in-china/"/>
     <id>https://jobsstroustrup.github.io/2020/12/20/prediction-on-2021-real-estates-in-china/</id>
     <published>2020-12-19T16:54:06.000Z</published>
-    <updated>2020-12-21T09:15:29.220Z</updated>
+    <updated>2021-01-15T12:49:06.435Z</updated>
     
     <summary type="html">
     
@@ -113,10 +143,10 @@
     
     </summary>
     
-      <category term="Contemplation" scheme="https://jobsstroustrup.github.io/categories/Contemplation/"/>
+      <category term="ContemplationNew" scheme="https://jobsstroustrup.github.io/categories/ContemplationNew/"/>
     
     
-      <category term="Contemplation" scheme="https://jobsstroustrup.github.io/tags/Contemplation/"/>
+      <category term="ContemplationNew" scheme="https://jobsstroustrup.github.io/tags/ContemplationNew/"/>
     
   </entry>
   
@@ -498,32 +528,6 @@
         
         
           &lt;h2 id=&quot;Today’s-Topic-Is-About-Drawing-to-Help-to-Find-Who-You-Are&quot;&gt;&lt;a href=&quot;#Today’s-Topic-Is-About-Drawing-to-Help-to-Find-Who-You-Are&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="TED" scheme="https://jobsstroustrup.github.io/categories/TED/"/>
-    
-    
-      <category term="TED" scheme="https://jobsstroustrup.github.io/tags/TED/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Recommended TED on 10272020</title>
-    <link href="https://jobsstroustrup.github.io/2020/10/27/recommended-ted-on-10272020/"/>
-    <id>https://jobsstroustrup.github.io/2020/10/27/recommended-ted-on-10272020/</id>
-    <published>2020-10-27T10:08:54.000Z</published>
-    <updated>2020-11-01T13:44:07.350Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Today’s-Topic-Is-About-Resilience&quot;&gt;&lt;a href=&quot;#Today’s-Topic-Is-About-Resilience&quot; class=&quot;headerlink&quot; title=&quot;Today’s Topic Is About
         
       
     

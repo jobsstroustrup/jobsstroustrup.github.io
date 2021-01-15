@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Reflection on Control of Drugs</title>
+      <link href="/2021/01/15/reflection-on-control-of-drugs/"/>
+      <url>/2021/01/15/reflection-on-control-of-drugs/</url>
+      
+        <content type="html"><![CDATA[<p>Hi， a test.</p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> Contemplation </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Contemplation </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Dance with Uncertainty</title>
       <link href="/2020/12/31/dance-with-uncertainty/"/>
       <url>/2020/12/31/dance-with-uncertainty/</url>
@@ -88,14 +113,14 @@
       
       <categories>
           
-          <category> Contemplation </category>
+          <category> ContemplationNew </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Contemplation </tag>
+            <tag> ContemplationNew </tag>
             
         </tags>
       
