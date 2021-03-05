@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jobsstroustrup.github.io/"/>
-  <updated>2021-01-16T03:38:02.352Z</updated>
+  <updated>2021-03-05T03:01:46.750Z</updated>
   <id>https://jobsstroustrup.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Reflection on Conspiracy Theory</title>
+    <link href="https://jobsstroustrup.github.io/2021/03/05/reflection-on-conspiracy-theory/"/>
+    <id>https://jobsstroustrup.github.io/2021/03/05/reflection-on-conspiracy-theory/</id>
+    <published>2021-03-05T02:17:15.000Z</published>
+    <updated>2021-03-05T03:01:46.750Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;People tend to deeply believe in conspiracy theory and love to spread it. I have always been wondering why conspiracy theory has such a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Reflection on Control of Opioid Drugs</title>
@@ -47,7 +69,7 @@
     <link href="https://jobsstroustrup.github.io/2020/12/31/dance-with-uncertainty/"/>
     <id>https://jobsstroustrup.github.io/2020/12/31/dance-with-uncertainty/</id>
     <published>2020-12-31T11:25:05.000Z</published>
-    <updated>2020-12-31T13:03:06.835Z</updated>
+    <updated>2021-03-05T02:20:23.959Z</updated>
     
     <summary type="html">
     
@@ -507,32 +529,6 @@
     
     
       <category term="Contemplation" scheme="https://jobsstroustrup.github.io/tags/Contemplation/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Recommended TED on 10302020</title>
-    <link href="https://jobsstroustrup.github.io/2020/10/30/recommended-ted-on-10302020/"/>
-    <id>https://jobsstroustrup.github.io/2020/10/30/recommended-ted-on-10302020/</id>
-    <published>2020-10-30T12:31:18.000Z</published>
-    <updated>2020-11-01T13:44:15.104Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;Today’s-Topic-Is-About-Drawing-to-Help-to-Find-Who-You-Are&quot;&gt;&lt;a href=&quot;#Today’s-Topic-Is-About-Drawing-to-Help-to-Find-Who-You-Are&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="TED" scheme="https://jobsstroustrup.github.io/categories/TED/"/>
-    
-    
-      <category term="TED" scheme="https://jobsstroustrup.github.io/tags/TED/"/>
     
   </entry>
   
