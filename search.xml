@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Reflection on Coronavirus situation in China</title>
+      <link href="/2021/04/12/reflection-on-coronavirus-situation-in-china/"/>
+      <url>/2021/04/12/reflection-on-coronavirus-situation-in-china/</url>
+      
+        <content type="html"><![CDATA[<script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> ContemplationNew </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ContemplationNew </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Reflection on Conspiracy Theory</title>
       <link href="/2021/03/05/reflection-on-conspiracy-theory/"/>
       <url>/2021/03/05/reflection-on-conspiracy-theory/</url>
@@ -11,6 +36,18 @@
         <content type="html"><![CDATA[<p>People tend to deeply believe in conspiracy theory and love to spread it. I have always been wondering why conspiracy theory has such a great power. And the fact that some famous conspiracy-spread celebrities exploit these notorious theory to make a fortune and show big influence on the public makes me feel more upset. I sometimes doubt their motivation on producing these conspiracy theories, for like just make a living or want to be famous, and of course, this route to being famous relys more on live-performance and emotional expressions, not as high-demanding as starting a company or working hard to earn a fortune. I think a Chinese proverb can accurately describe this phenomenon, which, translated into English is that they are either too foolish or too evil, only these two possibilities.</p><p>I conclude several points about why conspiracy theory can spread so fast and extensively. First, sensational news can spread more quickly and get more clicks than objective news. People are likely to spread some horrible and shocking news as so to warn others to get away from such dangers or get together to tackle dangers, like an intuition inside human being’s DNA. However, most news, especially only-present-facts news, normal people won’t get a big reaction so these news cannot be spread fast and far. And people who firstly produce these conspiracy theories could be regared as whistlers and savers. </p><p>Second, conspiracy theories is much easier than truth, or true news. Take global warming as an example. Most conspiracy still have deductions, arguments and conclusions. Conspiracy theorists declare that “because Texas is geting colder and colder, so global warming is just a lie”. It only contain one sentence and it’s easy to get the point for the public. But true news need to say that “global warming is about climate rather than weather. And it would happen in the next few decades or even at the end of 21st century, not now. And global warming is more about the whole Earth, instead of some specific areas, so somewhere cooling and warming on the whole can co-exist”. It takes 3-4 sentences to explain the fact, and people still need to look up more information to comprehend.</p><p>We need to admit that the education level is very imbalanced not only in a country but also globally, and that most people right now haven’t get the chance to learn or self-learn the ability to think comprehensively, be open to other opinions, compare information from different sources, give up their original opinions if there’s something better and if they are convinced, and get their independent thinking system. So this problem on conspiracy theory still have a long way to go. </p><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
       
       
+      <categories>
+          
+          <category> ContemplationNew </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ContemplationNew </tag>
+            
+        </tags>
       
     </entry>
     
@@ -26,14 +63,14 @@
       
       <categories>
           
-          <category> Contemplation </category>
+          <category> ContemplationNew </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Contemplation </tag>
+            <tag> ContemplationNew </tag>
             
         </tags>
       
@@ -51,14 +88,14 @@
       
       <categories>
           
-          <category> Contemplation </category>
+          <category> ContemplationNew </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Contemplation </tag>
+            <tag> ContemplationNew </tag>
             
         </tags>
       
@@ -226,14 +263,14 @@
       
       <categories>
           
-          <category> Contemplation </category>
+          <category> ContemplationNew </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Contemplation </tag>
+            <tag> ContemplationNew </tag>
             
         </tags>
       
@@ -401,14 +438,14 @@
       
       <categories>
           
-          <category> Contemplation </category>
+          <category> ContemplationNew </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Contemplation </tag>
+            <tag> ContemplationNew </tag>
             
         </tags>
       
@@ -476,14 +513,14 @@
       
       <categories>
           
-          <category> Contemplation </category>
+          <category> ContemplationNew </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Contemplation </tag>
+            <tag> ContemplationNew </tag>
             
         </tags>
       
