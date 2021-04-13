@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://jobsstroustrup.github.io/"/>
-  <updated>2021-04-12T12:15:59.710Z</updated>
+  <updated>2021-04-13T15:42:09.674Z</updated>
   <id>https://jobsstroustrup.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://jobsstroustrup.github.io/2021/04/12/reflection-on-coronavirus-situation-in-china/"/>
     <id>https://jobsstroustrup.github.io/2021/04/12/reflection-on-coronavirus-situation-in-china/</id>
     <published>2021-04-12T10:49:51.000Z</published>
-    <updated>2021-04-12T12:15:59.710Z</updated>
+    <updated>2021-04-13T15:42:09.674Z</updated>
     
     <summary type="html">
     
@@ -29,11 +29,7 @@
       
         
         
-          &lt;script&gt;
-        document.querySelectorAll(&#39;.github-emoji&#39;)
-          .forEach(el =&gt; {
-            if (!el.dataset.src) { return; }
-       
+          &lt;p&gt;Now the world is recovering from COVID-19 pandemic, but memories of sorrow won’t dissipate easily from people’s minds. It is the faults
         
       
     

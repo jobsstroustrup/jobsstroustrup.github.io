@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://jobsstroustrup.github.io/2021/04/12/reflection-on-coronavirus-situation-in-china/</loc>
+    <lastmod>2021-04-13</lastmod>
+  </url>
+  <url>
     <loc>https://jobsstroustrup.github.io/2020/12/15/knowledge-summary-rigid-body/</loc>
     <lastmod>2021-04-12</lastmod>
   </url>
@@ -22,10 +26,6 @@
   </url>
   <url>
     <loc>https://jobsstroustrup.github.io/2020/12/31/dance-with-uncertainty/</loc>
-    <lastmod>2021-04-12</lastmod>
-  </url>
-  <url>
-    <loc>https://jobsstroustrup.github.io/2021/04/12/reflection-on-coronavirus-situation-in-china/</loc>
     <lastmod>2021-04-12</lastmod>
   </url>
   <url>
