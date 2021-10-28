@@ -846,7 +846,7 @@ $(function () {
             volume: Number('0.7'),
             listFolded: 'false' === 'true',
             listMaxHeight: '197px',
-            audio: JSON.parse('[{"name":"Piano Sonata No.23 In F Minor, Op.57 -Appassionata:3. Allegro ma non troppo","artist":"Wilhelm Kempff","url":"http://music.163.com/song/media/outer/url?id=1926602.mp3","cover":"http://p2.music.126.net/1NRDLJcgK0y3ru7QMwBjuw==/109951165249860305.jpg?param=130y130"},{"name":"Sonata No. 8 for Piano, Op. 13Pathétiquein C minor:I. Grave - Allegro di molto e con brio","artist":"Rudolf Serkin","url":"http://music.163.com/song/media/outer/url?id=1926582.mp3","cover":"http://p2.music.126.net/O6ljt9uBVfaHdK2R3yk28w==/832330302278241.jpg?param=130y130"},{"name":"Sonata No. 8 for Piano, Op. 13Pathétiquein C minor:II. Adagio cantabile","artist":"Rudolf Serkin","url":"http://music.163.com/song/media/outer/url?id=1926586.mp3","cover":"http://p2.music.126.net/O6ljt9uBVfaHdK2R3yk28w==/832330302278241.jpg?param=130y130"},{"name":"Sonata No. 14 in C-sharp minor for Piano, Op. 27, No. 2Moonlight:I. Adagio sostenuto","artist":"Rudolf Serkin","url":"http://music.163.com/song/media/outer/url?id=1926572.mp3","cover":"http://p2.music.126.net/O6ljt9uBVfaHdK2R3yk28w==/832330302278241.jpg?param=130y130"},{"name":"Liebeslied No.3","artist":"Yundi Li","url":"http://music.163.com/song/media/outer/url?id=117227.mp3","cover":"http://p2.music.126.net/wR100XCnEhUvjbavy_Z-Cw==/109951163738732053.jpg?param=130y130"}]')
+            audio: JSON.parse('[{"name":"Piano Sonata No.23 In F Minor, Op.57 -Appassionata:3. Allegro ma non troppo","artist":"Wilhelm Kempff","url":"https://res.cloudinary.com/jobsstroustrup/video/upload/v1635400825/for_hexo_blog/Wilhelm_Kempff_-_Piano_Sonata_No.23_In_F_Minor_Op.57_-_Appassionata_3._Allegro_ma_non_troppo_kjyhqr.mp3","cover":"http://p2.music.126.net/1NRDLJcgK0y3ru7QMwBjuw==/109951165249860305.jpg?param=130y130"},{"name":"Sonata No. 8 for Piano, Op. 13Pathétiquein C minor:I. Grave - Allegro di molto e con brio","artist":"Rudolf Serkin","url":"https://res.cloudinary.com/jobsstroustrup/video/upload/v1635400884/for_hexo_blog/Rudolf_Serkin_Ludwig_van_Beethoven_-_Piano_Sonata_No._8_in_C_Minor_Op._13_Path%C3%A9tique_I._Grave_-_Allegro_di_molto_e_con_brio_sqc5t3.mp3","cover":"http://p2.music.126.net/O6ljt9uBVfaHdK2R3yk28w==/832330302278241.jpg?param=130y130"},{"name":"Sonata No. 8 for Piano, Op. 13Pathétiquein C minor:II. Adagio cantabile","artist":"Rudolf Serkin","url":"https://res.cloudinary.com/jobsstroustrup/video/upload/v1635400878/for_hexo_blog/Rudolf_Serkin_-_Sonata_No._8_in_C_Minor_for_Piano_Op._13_Path%C3%A9tque_II._Adagio_cantabile_x43ccd.mp3","cover":"http://p2.music.126.net/O6ljt9uBVfaHdK2R3yk28w==/832330302278241.jpg?param=130y130"},{"name":"Sonata No. 14 in C-sharp minor for Piano, Op. 27, No. 2Moonlight:I. Adagio sostenuto","artist":"Rudolf Serkin","url":"https://res.cloudinary.com/jobsstroustrup/video/upload/v1635400855/for_hexo_blog/Rudolf_Serkin_-_Piano_Sonata_No._14_in_C-Sharp_Minor_Op._27_No._2__Moonlight__I._Adagio_sostenuto_aokx3r.mp3","cover":"http://p2.music.126.net/O6ljt9uBVfaHdK2R3yk28w==/832330302278241.jpg?param=130y130"},{"name":"Liebeslied No.3","artist":"Yundi Li","url":"http://music.163.com/song/media/outer/url?id=117227.mp3","cover":"http://p2.music.126.net/wR100XCnEhUvjbavy_Z-Cw==/109951163738732053.jpg?param=130y130"}]')
         });
     });
 </script>
@@ -1698,35 +1698,14 @@ $(function () {
 
         <!-- 鼠标点击烟花爆炸效果  洪卫 shw2018 add 2019.09.09 -->
         
-            <canvas class="fireworks" style="position: fixed; left: 0; top: 0; z-index: 1; pointer-events: none;"></canvas>
-            <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
-            <script type="text/javascript" src="/js/fireworks.js"></script>
-        
 
         <!-- 背景雪花飘落特效洪卫 shw2018 add 2019.09.10 -->
-        
-            <script type="text/javascript">
-            //只在桌面版网页启用特效
-            var windowWidth = $(window).width();
-            if (windowWidth > 768) {
-                document.write('<script type="text/javascript" src="/js/sakura.js"><\/script>');
-            }
-            </script>
         
 
         <!-- 鼠标点击文字特效 洪卫 shw2018 add 2019.09.10-->
         
-            <script src="/js/wenzi.js" type="text/javascript"></script>
-        
 
         <!-- 背景雪花飘落特效 洪卫 shw2018 add 2019.09.10 -->
-        
-            <script type="text/javascript">
-                var windowWidth = $(window).width();
-                if (windowWidth > 768) {
-                    document.write('<script type="text/javascript" src="/js/xuehuapiaoluo.js"><\/script>');
-                }
-            </script>
         
 
         <!-- 在线聊天工具  洪卫 shw2018 add 2019.09.11 -->
@@ -1765,13 +1744,6 @@ $(function () {
         
 
         <!-- 背景 canvas-nest  洪卫 shw 2018  add 2019.09.15-->
-        
-            <script type="text/javascript">
-            var windowWidth = $(window).width();
-            if (windowWidth > 992) {
-                document.write('<script type="text/javascript" color="0,0,255" pointColor="0,0,255" opacity= "0.8" zIndex="--1" count="150"src="/libs/background/canvas-nest.js"><\/script>');
-            }
-            </script>
         
 
         <!-- 背景静止彩带  洪卫 shw 2018  add 2019.09.15-->
