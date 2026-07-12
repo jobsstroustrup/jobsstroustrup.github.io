@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="zh" data-collection="research" data-astro-cid-37fxchfa> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/favicon-180.png"><link rel="manifest" href="/site.webmanifest"><link rel="preload" as="font" type="font/woff2" crossorigin href="/_astro/eb-garamond-latin-700-normal.woff2" onerror="this.remove()"><link rel="preload" as="font" type="font/woff2" crossorigin href="/_astro/inter-latin-400-normal.woff2" onerror="this.remove()"><title>游戏 AI 与控制架构</title><meta name="description" content="游戏 AI 与控制架构"><link rel="canonical" href="https://jobsstroustrup.github.io/zh/research/%E6%B8%B8%E6%88%8Fai%E4%B8%8E%E6%8E%A7%E5%88%B6%E6%9E%B6%E6%9E%84/"><meta property="og:title" content="游戏 AI 与控制架构"><meta property="og:description" content="游戏 AI 与控制架构"><meta property="og:type" content="website"><meta property="og:url" content="https://jobsstroustrup.github.io/zh/research/%E6%B8%B8%E6%88%8Fai%E4%B8%8E%E6%8E%A7%E5%88%B6%E6%9E%B6%E6%9E%84/"><meta property="og:site_name" content="Zhenyu He · Jobs Stroustrup"><meta property="og:image" content="https://jobsstroustrup.github.io/hero/sgs-hero-1280.jpg"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="游戏 AI 与控制架构"><meta name="twitter:description" content="游戏 AI 与控制架构"><meta name="twitter:image" content="https://jobsstroustrup.github.io/hero/sgs-hero-1280.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Zhenyu He","alternateName":"Jobs Stroustrup","jobTitle":"Researcher","url":"https://jobsstroustrup.github.io/","image":"https://jobsstroustrup.github.io/hero/sgs-hero-1280.jpg","description":"物理学背景的研究者与创业者；曾在 PKU、Caltech、UC Berkeley 学习，现居 Berkeley, CA。","alumniOf":[{"@type":"CollegeOrUniversity","name":"Peking University","url":"https://english.pku.edu.cn/"},{"@type":"CollegeOrUniversity","name":"University of California, Berkeley","url":"https://www.berkeley.edu/"}],"knowsAbout":["Atmospheric physics","Large-eddy simulation","Bayesian inverse problems","Satellite remote sensing","Climate dynamics","High-performance computing","Methane MRV","Nuclear-winter modelling","Tropical convection","Walker circulation"],"worksFor":{"@type":"Organization","name":"TerraByte Intelligence","description":"TerraByte Intelligence 联合创始人（YC Spring 2026）"},"knowsLanguage":["en","zh"],"sameAs":["https://github.com/JobsStroustrup","https://orcid.org/0009-0005-1942-9469","https://scholar.google.com/citations?user=OK6sAb0AAAAJ"]}</script><link rel="alternate" hreflang="en" href="https://jobsstroustrup.github.io/en/research/%E6%B8%B8%E6%88%8Fai%E4%B8%8E%E6%8E%A7%E5%88%B6%E6%9E%B6%E6%9E%84/"><link rel="alternate" hreflang="zh" href="https://jobsstroustrup.github.io/zh/research/%E6%B8%B8%E6%88%8Fai%E4%B8%8E%E6%8E%A7%E5%88%B6%E6%9E%B6%E6%9E%84/"><link rel="alternate" hreflang="x-default" href="https://jobsstroustrup.github.io/en/research/%E6%B8%B8%E6%88%8Fai%E4%B8%8E%E6%8E%A7%E5%88%B6%E6%9E%B6%E6%9E%84/"><meta property="og:type" content="article"> <meta property="og:title" content="游戏 AI 与控制架构"> <meta property="og:description" content="游戏 AI 与控制架构"> <meta property="og:locale" content="zh_CN"> <meta property="article:author" content="Zhenyu He · Jobs Stroustrup"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="游戏 AI 与控制架构"> <meta name="twitter:description" content="游戏 AI 与控制架构"> <link rel="stylesheet" media="print" href="/styles/research-print.css"> <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"游戏 AI 与控制架构","author":{"@type":"Person","name":"Zhenyu He · Jobs Stroustrup"},"inLanguage":"zh"}</script> <link rel="stylesheet" href="/_astro/BaseLayout.j-OfamCa.css">
+<link rel="stylesheet" href="/_astro/ResearchLayout.DDpCI2AE.css"></head> <body data-astro-cid-37fxchfa>  <a href="#main" class="skip-nav" data-astro-cid-37fxchfa>跳过导航至主内容</a> <header class="site-nav" data-astro-cid-37fxchfa> <a href="/zh/" class="wordmark" data-astro-cid-37fxchfa>Zhenyu He · Jobs Stroustrup</a> <nav aria-label="主导航" data-astro-cid-37fxchfa> <ul class="nav-list" data-astro-cid-37fxchfa> <li data-astro-cid-37fxchfa> <a href="/zh/research/" data-astro-cid-37fxchfa>研究</a> </li><li data-astro-cid-37fxchfa> <a href="/zh/blog/" data-astro-cid-37fxchfa>博客</a> </li><li data-astro-cid-37fxchfa> <a href="/zh/portfolio/" data-astro-cid-37fxchfa>作品</a> </li><li data-astro-cid-37fxchfa> <a href="/zh/about/" data-astro-cid-37fxchfa>关于</a> </li><li data-astro-cid-37fxchfa> <a href="/zh/archive/" data-astro-cid-37fxchfa>存档</a> </li> </ul> </nav> <div class="lang-switch" role="group" aria-label="Language switcher" data-astro-cid-su6xvggn> <a href="/en/research/game-ai-and-control-architecture/" class lang="en" onclick="document.cookie='pref-lang=en;path=/;max-age=31536000;samesite=lax';" data-astro-cid-su6xvggn>English</a> <span class="sep" aria-hidden="true" data-astro-cid-su6xvggn>·</span> <a href="/zh/research/%E6%B8%B8%E6%88%8Fai%E4%B8%8E%E6%8E%A7%E5%88%B6%E6%9E%B6%E6%9E%84/" class="on" aria-current="true" lang="zh" onclick="document.cookie='pref-lang=zh;path=/;max-age=31536000;samesite=lax';" data-astro-cid-su6xvggn>中文</a> </div> </header>  <main id="main" class="site-main" data-astro-cid-37fxchfa>   <a href="#content" class="research-skip" data-astro-cid-63t2xjvj>Skip to article</a> <article class="research" lang="zh" id="content" data-astro-cid-63t2xjvj> <header class="research-header" data-astro-cid-63t2xjvj> <p class="research-eyebrow" data-astro-cid-63t2xjvj> 研究笔记 · Research Note  </p> <h1 class="research-title" data-astro-cid-63t2xjvj>游戏 AI 与控制架构</h1>  <p class="research-meta" data-astro-cid-63t2xjvj> <span class="research-author" data-astro-cid-63t2xjvj>Zhenyu He · Jobs Stroustrup</span>  <span class="research-meta-sep research-meta-screen-only" aria-hidden="true" data-astro-cid-63t2xjvj>·</span> <span class="research-readtime research-meta-screen-only" data-astro-cid-63t2xjvj> 阅读约 1 分钟 </span> </p>   </header> <hr class="research-rule" aria-hidden="true" data-astro-cid-63t2xjvj> <div class="research-body" data-astro-cid-63t2xjvj>  <h1 id="游戏-ai-与控制架构-game-ai--control-architecture">游戏 AI 与控制架构 (Game AI &#x26; Control Architecture)</h1>
+<h3 id="熟练度">熟练度</h3>
+<p>熟练</p>
+<h3 id="描述">描述</h3>
+<p><strong>多层决策架构（reactive + deliberative 混合）</strong></p>
+<ul>
+<li>威胁检测层 → 立即反应式避险（reactive）</li>
+<li>无威胁时 → 规划-验证-执行管线（deliberative）</li>
+<li>对应经典 AI 行为架构：Brooks subsumption / Boyd OODA loop</li>
+<li>应用：从高频避险到低频长程追击的平滑切换</li>
+</ul>
+<p><strong>有状态 AI 控制器</strong></p>
+<ul>
+<li>状态机 + 持久化计划 + 外部条件触发的 abort/reset</li>
+<li>区别于 memoryless reactive 控制：agent 有记忆、能多帧执行一个计划、同时保留 abort 通道</li>
+<li>应用：既不”每帧重新思考”浪费算力，也不”无脑走完已定死路线”变成 brittle</li>
+</ul>
+<p><strong>自适应超参数（adaptive hyperparameters）</strong></p>
+<ul>
+<li>密度自适应搜索半径：环境状态 → 动态 FOV（拥挤时聚焦、空旷时广视野）</li>
+<li>失败触发的探索扩展（<code>searchtime</code> 机制）：反复无解时自动扩大搜索空间，避免近视导致的局部极小值</li>
+<li>对标思想：RL 中的 adaptive exploration / temperature annealing</li>
+</ul>
+<p><strong>候选过滤的双侧阈值（cost-benefit pruning）</strong></p>
+<ul>
+<li>不只有上界（“能吃的猎物”），还有下界（“追这个猎物花费 > 收益就不追”）</li>
+<li>从经济学视角剪枝决策空间——每个动作算 ROI，不值得的直接丢弃</li>
+<li>可迁移到：交易策略、预算受限的 agent 规划、资源有限的任务调度</li>
+</ul>
+<p><strong>引擎反向工程与白盒建模</strong></p>
+<ul>
+<li>对外部系统（游戏引擎、外部 API、第三方库）做<strong>完整反向工程</strong>，得到一个可在 agent 内部复现的白盒模型</li>
+<li>这是精确 rollout 仿真、模拟决策后果、预训练 agent 的基础</li>
+<li>具体例：在 agent 内部重现 <code>kernel.py</code> 的 eject/absorb 物理公式，使前向仿真结果与真实引擎帧帧一致</li>
+</ul>
+<p><strong>Forward simulation / rollout verification</strong></p>
+<ul>
+<li>不依赖启发式得分，而是实打实跑 N 帧游戏引擎仿真，检查计划是否会中途失败</li>
+<li>思想血缘：Monte-Carlo tree search、AlphaGo/MuZero 的 rollout、model-based RL</li>
+<li>当前朴素版：200 帧顺序仿真；未来可扩展到 MCTS 并行 rollout</li>
+</ul>
+<p><strong>OOP 游戏实体建模</strong></p>
+<ul>
+<li>标准 game-object 数据模型：pos / veloc / radius / id / dead / collide_group</li>
+<li>配套方法：move / distance_from / area / collide / stay_in_bounds / limit_speed</li>
+<li>可迁移到：物理仿真、机器人仿真、多体物理系统</li>
+</ul>
+<p><strong>对手建模与 meta-game</strong></p>
+<ul>
+<li>读对手的策略代码 → 理解其决策模式 → 设计针对性反制</li>
+<li>博弈论二阶思维：不只”我要怎么最优”，还考虑”对手知道我这么想之后会怎么调整”</li>
+<li>可迁移到：对抗性 ML（adversarial robustness）、商业竞争分析、博弈论应用</li>
+</ul>
+<p><strong>Benchmark 文化</strong></p>
+<ul>
+<li>构建 baseline 梯度：brownian motion（最弱）→ 简单启发式 → 完整 AI（最强）</li>
+<li>“能打败哪些 baseline 才算合格”的工程纪律</li>
+<li>迁移：所有需要评估 agent/model 性能的场景</li>
+</ul>
+<h3 id="与其他-skill-的关系">与其他 skill 的关系</h3>
+<ul>
+<li>底层依赖 <a href="/zh/research/算法与数据结构/" class="wikilink" data-wikilink="算法与数据结构">算法与数据结构</a>（数据结构、搜索、几何计算）——这些是具体实现手段</li>
+<li>本 skill 是<strong>架构/架构思想</strong>层——关心”怎么组合这些算法成一个能实时决策的 agent”</li>
+<li>与 <a href="/zh/research/claude-skill开发方法论/" class="wikilink" data-wikilink="claude-skill开发方法论">Claude-Skill开发方法论</a> 有深刻的思想共鸣：
+<ul>
+<li>两者都是 human-in-the-loop + 数据飞轮 + 多层规则 + 结构化记忆的某种变体</li>
+<li>Osmo AI（2019）→ Claude Skill agent 设计（2026）的思想传承</li>
+<li>都强调”规划-验证-执行”管线而非单步 reactive</li>
+</ul>
+</li>
+</ul>
+<h3 id="在哪些经历中用到">在哪些经历中用到</h3>
+<ul>
+<li> — 完整实例，5 层架构（搜索机制 / 参数调优 / 战略编排 / 引擎反向工程 / 对手谱系）</li>
+</ul>
+<hr>  </div>  </article>  </main> <footer class="site-footer" data-astro-cid-37fxchfa> <p data-astro-cid-37fxchfa>
+© 2026 Zhenyu He · Jobs Stroustrup
+        · <a href="/atom.xml" data-astro-cid-37fxchfa>RSS</a>
+· <a href="/research/atom.xml" data-astro-cid-37fxchfa>Research RSS</a>
+· <a href="/archive/" data-astro-cid-37fxchfa>Archive (frozen 2021-10)</a> </p> <p class="build-date" data-astro-cid-37fxchfa>
+Built 2026-07-12 </p> </footer> </body> </html> 

@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Jobs&#39;s Blog</title>
+  
+  <subtitle>Jobs Stroustrup</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://jobsstroustrup.github.io/"/>
+  <updated>2021-10-31T03:37:32.710Z</updated>
+  <id>https://jobsstroustrup.github.io/</id>
+  
+  <author>
+    <name>Jobs Stroustrup</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Reflection on Coronavirus situation in China</title>
+    <link href="https://jobsstroustrup.github.io/2021/04/13/reflection-on-coronavirus-situation-in-china/"/>
+    <id>https://jobsstroustrup.github.io/2021/04/13/reflection-on-coronavirus-situation-in-china/</id>
+    <published>2021-04-13T10:49:51.000Z</published>
+    <updated>2021-10-31T03:37:32.710Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;As the world is recovering from COVID-19 pandemic, memories of sorrow won’t dissipate easily from people’s minds. It is the faults from
+        
+      
+    
+    </summary>
+    
+      <category term="ContemplationNew" scheme="https://jobsstroustrup.github.io/categories/ContemplationNew/"/>
+    
+    
+      <category term="ContemplationNew" scheme="https://jobsstroustrup.github.io/tags/ContemplationNew/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Reflection on Conspiracy Theory</title>
+    <link href="https://jobsstroustrup.github.io/2021/03/05/reflection-on-conspiracy-theory/"/>
+    <id>https://jobsstroustrup.github.io/2021/03/05/reflection-on-conspiracy-theory/</id>
+    <published>2021-03-05T02:17:15.000Z</published>
+    <updated>2021-10-31T03:35:02.378Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;People tend to deeply believe in conspiracy theory and love to spread it. I have always been wondering why conspiracy theories have such
+        
+      
+    
+    </summary>
+    
+      <category term="ContemplationNew" scheme="https://jobsstroustrup.github.io/categories/ContemplationNew/"/>
+    
+    
+      <category term="ContemplationNew" scheme="https://jobsstroustrup.github.io/tags/ContemplationNew/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Reflection on Control of Opioid Drugs</title>
+    <link href="https://jobsstroustrup.github.io/2021/01/15/reflection-on-control-of-drugs/"/>
+    <id>https://jobsstroustrup.github.io/2021/01/15/reflection-on-control-of-drugs/</id>
+    <published>2021-01-15T12:35:46.000Z</published>
+    <updated>2021-10-31T03:36:23.404Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Human’s war on drugs, especially opioid drugs, never stops. Most countries face the overt or covert war on drugs and many announce that
+        
+      
+    
+    </summary>
+    
+      <category term="ContemplationNew" scheme="https://jobsstroustrup.github.io/categories/ContemplationNew/"/>
+    
+    
+      <category term="ContemplationNew" scheme="https://jobsstroustrup.github.io/tags/ContemplationNew/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Dance with Uncertainty</title>
+    <link href="https://jobsstroustrup.github.io/2020/12/31/dance-with-uncertainty/"/>
+    <id>https://jobsstroustrup.github.io/2020/12/31/dance-with-uncertainty/</id>
+    <published>2020-12-31T11:25:05.000Z</published>
+    <updated>2021-10-31T03:04:18.054Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;This is my last post in 2020, a really magic year for all of us. If someone asks me about my greatest gains this year, I will definitely
+        
+      
+    
+    </summary>
+    
+      <category term="ContemplationNew" scheme="https://jobsstroustrup.github.io/categories/ContemplationNew/"/>
+    
+    
+      <category term="ContemplationNew" scheme="https://jobsstroustrup.github.io/tags/ContemplationNew/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Recommended TED on 12262020</title>
+    <link href="https://jobsstroustrup.github.io/2020/12/26/recommended-ted-on-12262020/"/>
+    <id>https://jobsstroustrup.github.io/2020/12/26/recommended-ted-on-12262020/</id>
+    <published>2020-12-26T01:25:44.000Z</published>
+    <updated>2021-10-31T03:30:37.799Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Today’s-Topic-is-about-Human-Challenge-Trial&quot;&gt;&lt;a href=&quot;#Today’s-Topic-is-about-Human-Challenge-Trial&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="TED" scheme="https://jobsstroustrup.github.io/categories/TED/"/>
+    
+    
+      <category term="TED" scheme="https://jobsstroustrup.github.io/tags/TED/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Regular Expression to Find Specific Sentence</title>
+    <link href="https://jobsstroustrup.github.io/2020/12/21/regular-expression-to-find-specific-sentence/"/>
+    <id>https://jobsstroustrup.github.io/2020/12/21/regular-expression-to-find-specific-sentence/</id>
+    <published>2020-12-21T09:14:00.000Z</published>
+    <updated>2021-10-31T03:40:10.791Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;First let’s do some review about reading and writing txt files&lt;br&gt;read data in txt file(many lines), as below&lt;br&gt;&lt;img
+        
+      
+    
+    </summary>
+    
+      <category term="Python" scheme="https://jobsstroustrup.github.io/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="https://jobsstroustrup.github.io/tags/Python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Prediction on 2021 Real Estates in China</title>
+    <link href="https://jobsstroustrup.github.io/2020/12/20/prediction-on-2021-real-estates-in-china/"/>
+    <id>https://jobsstroustrup.github.io/2020/12/20/prediction-on-2021-real-estates-in-china/</id>
+    <published>2020-12-19T16:54:06.000Z</published>
+    <updated>2021-10-31T03:11:09.084Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;The price of real estate in Shenzhen has gone through a significant change, with a percentage of $\frac{2000}{55000}$. But with the
+        
+      
+    
+    </summary>
+    
+      <category term="ContemplationNew" scheme="https://jobsstroustrup.github.io/categories/ContemplationNew/"/>
+    
+    
+      <category term="ContemplationNew" scheme="https://jobsstroustrup.github.io/tags/ContemplationNew/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Rigid Body and Space</title>
+    <link href="https://jobsstroustrup.github.io/2020/12/15/knowledge-summary-rigid-body/"/>
+    <id>https://jobsstroustrup.github.io/2020/12/15/knowledge-summary-rigid-body/</id>
+    <published>2020-12-14T16:05:11.000Z</published>
+    <updated>2021-10-27T08:47:32.600Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Rigid-Body-and-Space-an-Easy-Introducntion-to-Physics&quot;&gt;&lt;a href=&quot;#Rigid-Body-and-Space-an-Easy-Introducntion-to-Physics&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="Physics" scheme="https://jobsstroustrup.github.io/categories/Physics/"/>
+    
+    
+      <category term="Physics" scheme="https://jobsstroustrup.github.io/tags/Physics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Learning through TOEFL on 12102020</title>
+    <link href="https://jobsstroustrup.github.io/2020/12/10/learning-through-toefl-on-12102020/"/>
+    <id>https://jobsstroustrup.github.io/2020/12/10/learning-through-toefl-on-12102020/</id>
+    <published>2020-12-10T12:25:24.000Z</published>
+    <updated>2021-10-31T03:09:16.302Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Lecture-on-Using-Breath-Collectors-to-Study-Diet-Changes-of-Migratory-Birds&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="TOEFL" scheme="https://jobsstroustrup.github.io/categories/TOEFL/"/>
+    
+    
+      <category term="TOEFL" scheme="https://jobsstroustrup.github.io/tags/TOEFL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Learning through TOEFL on 12062020</title>
+    <link href="https://jobsstroustrup.github.io/2020/12/06/learning-in-toefl-on-12062020/"/>
+    <id>https://jobsstroustrup.github.io/2020/12/06/learning-in-toefl-on-12062020/</id>
+    <published>2020-12-06T08:18:58.000Z</published>
+    <updated>2021-10-31T03:07:57.884Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;A-Lecture-on-Life-Explosion&quot;&gt;&lt;a href=&quot;#A-Lecture-on-Life-Explosion&quot; class=&quot;headerlink&quot; title=&quot;A Lecture on Life Explosion&quot;&gt;&lt;/a&gt;A
+        
+      
+    
+    </summary>
+    
+      <category term="TOEFL" scheme="https://jobsstroustrup.github.io/categories/TOEFL/"/>
+    
+    
+      <category term="TOEFL" scheme="https://jobsstroustrup.github.io/tags/TOEFL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Reflection and Prediction on the Next Presidential Election</title>
+    <link href="https://jobsstroustrup.github.io/2020/12/01/reflection-and-prediction-on-the-next-presidential-election/"/>
+    <id>https://jobsstroustrup.github.io/2020/12/01/reflection-and-prediction-on-the-next-presidential-election/</id>
+    <published>2020-12-01T11:48:55.000Z</published>
+    <updated>2021-10-31T03:31:19.238Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Now Biden and Harris have won the presidential election in 2020. I am curious about whether democrats can still win the next
+        
+      
+    
+    </summary>
+    
+      <category term="ContemplationNew" scheme="https://jobsstroustrup.github.io/categories/ContemplationNew/"/>
+    
+    
+      <category term="ContemplationNew" scheme="https://jobsstroustrup.github.io/tags/ContemplationNew/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Recommended TED on 11262020</title>
+    <link href="https://jobsstroustrup.github.io/2020/11/27/recommended-ted-on-11262020/"/>
+    <id>https://jobsstroustrup.github.io/2020/11/27/recommended-ted-on-11262020/</id>
+    <published>2020-11-26T16:43:06.000Z</published>
+    <updated>2021-10-31T03:29:55.207Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Today’s-Topic-Is-About-Duration-of-a-Pandemic&quot;&gt;&lt;a href=&quot;#Today’s-Topic-Is-About-Duration-of-a-Pandemic&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="TED" scheme="https://jobsstroustrup.github.io/categories/TED/"/>
+    
+    
+      <category term="TED" scheme="https://jobsstroustrup.github.io/tags/TED/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Recommended TED on 11242020</title>
+    <link href="https://jobsstroustrup.github.io/2020/11/24/recommended-ted-on-11242020/"/>
+    <id>https://jobsstroustrup.github.io/2020/11/24/recommended-ted-on-11242020/</id>
+    <published>2020-11-24T09:35:17.000Z</published>
+    <updated>2021-10-31T03:27:06.727Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Today’s-Topic-Is-About-the-Gene-Analysis-on-People’s-Ancestors&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="TED" scheme="https://jobsstroustrup.github.io/categories/TED/"/>
+    
+    
+      <category term="TED" scheme="https://jobsstroustrup.github.io/tags/TED/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Learning through TOEFL on 11202020</title>
+    <link href="https://jobsstroustrup.github.io/2020/11/20/learning-in-toefl-on-11202020/"/>
+    <id>https://jobsstroustrup.github.io/2020/11/20/learning-in-toefl-on-11202020/</id>
+    <published>2020-11-20T09:23:50.000Z</published>
+    <updated>2021-10-31T03:07:26.596Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;My-First-Post-about-Newly-Learned-Knowledge-through-TOEFL&quot;&gt;&lt;a href=&quot;#My-First-Post-about-Newly-Learned-Knowledge-through-TOEFL&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="TOEFL" scheme="https://jobsstroustrup.github.io/categories/TOEFL/"/>
+    
+    
+      <category term="TOEFL" scheme="https://jobsstroustrup.github.io/tags/TOEFL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Recommended TED on 11172020</title>
+    <link href="https://jobsstroustrup.github.io/2020/11/18/recommended-ted-on-11172020/"/>
+    <id>https://jobsstroustrup.github.io/2020/11/18/recommended-ted-on-11172020/</id>
+    <published>2020-11-17T16:32:49.000Z</published>
+    <updated>2021-10-31T03:25:41.478Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Today’s-Topic-Is-About-the-Symbolism-of-Flags&quot;&gt;&lt;a href=&quot;#Today’s-Topic-Is-About-the-Symbolism-of-Flags&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="TED" scheme="https://jobsstroustrup.github.io/categories/TED/"/>
+    
+    
+      <category term="TED" scheme="https://jobsstroustrup.github.io/tags/TED/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Recommended TED on 11102020</title>
+    <link href="https://jobsstroustrup.github.io/2020/11/11/rrecommended-ted-on-11102020/"/>
+    <id>https://jobsstroustrup.github.io/2020/11/11/rrecommended-ted-on-11102020/</id>
+    <published>2020-11-11T01:47:43.000Z</published>
+    <updated>2021-10-31T03:41:09.270Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Today’s-Topic-Is-About-Competitions-among-tech-companies-in-China-and-United-States&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="TED" scheme="https://jobsstroustrup.github.io/categories/TED/"/>
+    
+    
+      <category term="TED" scheme="https://jobsstroustrup.github.io/tags/TED/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Recommended TED on 11092020</title>
+    <link href="https://jobsstroustrup.github.io/2020/11/09/recommended-ted-on-11092020/"/>
+    <id>https://jobsstroustrup.github.io/2020/11/09/recommended-ted-on-11092020/</id>
+    <published>2020-11-09T04:13:35.000Z</published>
+    <updated>2021-10-31T03:24:28.089Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Today’s-Topic-Is-About-Voting-Systems&quot;&gt;&lt;a href=&quot;#Today’s-Topic-Is-About-Voting-Systems&quot; class=&quot;headerlink&quot; title=&quot;Today’s Topic Is
+        
+      
+    
+    </summary>
+    
+      <category term="TED" scheme="https://jobsstroustrup.github.io/categories/TED/"/>
+    
+    
+      <category term="TED" scheme="https://jobsstroustrup.github.io/tags/TED/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Reflection on 2020 Election in United States</title>
+    <link href="https://jobsstroustrup.github.io/2020/11/08/reflection-on-2020-election-in-united-states/"/>
+    <id>https://jobsstroustrup.github.io/2020/11/08/reflection-on-2020-election-in-united-states/</id>
+    <published>2020-11-08T12:28:42.000Z</published>
+    <updated>2021-10-31T03:33:52.802Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;As the Associated Press just announced Biden winning the election in 2020, the whole election thing is kind of settled down. Personally
+        
+      
+    
+    </summary>
+    
+      <category term="ContemplationNew" scheme="https://jobsstroustrup.github.io/categories/ContemplationNew/"/>
+    
+    
+      <category term="ContemplationNew" scheme="https://jobsstroustrup.github.io/tags/ContemplationNew/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Economics-Ideas of Marginal</title>
+    <link href="https://jobsstroustrup.github.io/2020/11/02/economics-ideas-of-marginal/"/>
+    <id>https://jobsstroustrup.github.io/2020/11/02/economics-ideas-of-marginal/</id>
+    <published>2020-11-02T10:43:07.000Z</published>
+    <updated>2021-10-31T03:06:09.179Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;This is my first post about economics. I think one of the most significant ideas in economics is the idea of “marginal”. Marginal
+        
+      
+    
+    </summary>
+    
+      <category term="Economics" scheme="https://jobsstroustrup.github.io/categories/Economics/"/>
+    
+    
+      <category term="Economics" scheme="https://jobsstroustrup.github.io/tags/Economics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Recommended TED on 11012020</title>
+    <link href="https://jobsstroustrup.github.io/2020/11/01/recommended-ted-on-11012020/"/>
+    <id>https://jobsstroustrup.github.io/2020/11/01/recommended-ted-on-11012020/</id>
+    <published>2020-11-01T13:43:28.000Z</published>
+    <updated>2021-10-31T03:23:18.713Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Today’s-Topic-Is-About-Shared-Data-to-the-Tech-Companies&quot;&gt;&lt;a href=&quot;#Today’s-Topic-Is-About-Shared-Data-to-the-Tech-Companies&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="TED" scheme="https://jobsstroustrup.github.io/categories/TED/"/>
+    
+    
+      <category term="TED" scheme="https://jobsstroustrup.github.io/tags/TED/"/>
+    
+  </entry>
+  
+</feed>

@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="zh" data-collection="research" data-astro-cid-37fxchfa> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/favicon-180.png"><link rel="manifest" href="/site.webmanifest"><link rel="preload" as="font" type="font/woff2" crossorigin href="/_astro/eb-garamond-latin-700-normal.woff2" onerror="this.remove()"><link rel="preload" as="font" type="font/woff2" crossorigin href="/_astro/inter-latin-400-normal.woff2" onerror="this.remove()"><title>Hardened Balancing Principle (HBP)</title><meta name="description" content="Hardened Balancing Principle (HBP)"><link rel="canonical" href="https://jobsstroustrup.github.io/zh/research/hardened-balancing-principle/"><meta property="og:title" content="Hardened Balancing Principle (HBP)"><meta property="og:description" content="Hardened Balancing Principle (HBP)"><meta property="og:type" content="website"><meta property="og:url" content="https://jobsstroustrup.github.io/zh/research/hardened-balancing-principle/"><meta property="og:site_name" content="Zhenyu He · Jobs Stroustrup"><meta property="og:image" content="https://jobsstroustrup.github.io/hero/sgs-hero-1280.jpg"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Hardened Balancing Principle (HBP)"><meta name="twitter:description" content="Hardened Balancing Principle (HBP)"><meta name="twitter:image" content="https://jobsstroustrup.github.io/hero/sgs-hero-1280.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Zhenyu He","alternateName":"Jobs Stroustrup","jobTitle":"Researcher","url":"https://jobsstroustrup.github.io/","image":"https://jobsstroustrup.github.io/hero/sgs-hero-1280.jpg","description":"物理学背景的研究者与创业者；曾在 PKU、Caltech、UC Berkeley 学习，现居 Berkeley, CA。","alumniOf":[{"@type":"CollegeOrUniversity","name":"Peking University","url":"https://english.pku.edu.cn/"},{"@type":"CollegeOrUniversity","name":"University of California, Berkeley","url":"https://www.berkeley.edu/"}],"knowsAbout":["Atmospheric physics","Large-eddy simulation","Bayesian inverse problems","Satellite remote sensing","Climate dynamics","High-performance computing","Methane MRV","Nuclear-winter modelling","Tropical convection","Walker circulation"],"worksFor":{"@type":"Organization","name":"TerraByte Intelligence","description":"TerraByte Intelligence 联合创始人（YC Spring 2026）"},"knowsLanguage":["en","zh"],"sameAs":["https://github.com/JobsStroustrup","https://orcid.org/0009-0005-1942-9469","https://scholar.google.com/citations?user=OK6sAb0AAAAJ"]}</script><link rel="alternate" hreflang="en" href="https://jobsstroustrup.github.io/en/research/hardened-balancing-principle/"><link rel="alternate" hreflang="zh" href="https://jobsstroustrup.github.io/zh/research/hardened-balancing-principle/"><link rel="alternate" hreflang="x-default" href="https://jobsstroustrup.github.io/en/research/hardened-balancing-principle/"><meta property="og:type" content="article"> <meta property="og:title" content="Hardened Balancing Principle (HBP)"> <meta property="og:description" content="Hardened Balancing Principle (HBP)"> <meta property="og:locale" content="zh_CN"> <meta property="article:author" content="Zhenyu He · Jobs Stroustrup"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="Hardened Balancing Principle (HBP)"> <meta name="twitter:description" content="Hardened Balancing Principle (HBP)"> <link rel="stylesheet" media="print" href="/styles/research-print.css"> <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Hardened Balancing Principle (HBP)","author":{"@type":"Person","name":"Zhenyu He · Jobs Stroustrup"},"inLanguage":"zh"}</script> <link rel="stylesheet" href="/_astro/BaseLayout.j-OfamCa.css">
+<link rel="stylesheet" href="/_astro/ResearchLayout.DDpCI2AE.css"></head> <body data-astro-cid-37fxchfa>  <a href="#main" class="skip-nav" data-astro-cid-37fxchfa>跳过导航至主内容</a> <header class="site-nav" data-astro-cid-37fxchfa> <a href="/zh/" class="wordmark" data-astro-cid-37fxchfa>Zhenyu He · Jobs Stroustrup</a> <nav aria-label="主导航" data-astro-cid-37fxchfa> <ul class="nav-list" data-astro-cid-37fxchfa> <li data-astro-cid-37fxchfa> <a href="/zh/research/" data-astro-cid-37fxchfa>研究</a> </li><li data-astro-cid-37fxchfa> <a href="/zh/blog/" data-astro-cid-37fxchfa>博客</a> </li><li data-astro-cid-37fxchfa> <a href="/zh/portfolio/" data-astro-cid-37fxchfa>作品</a> </li><li data-astro-cid-37fxchfa> <a href="/zh/about/" data-astro-cid-37fxchfa>关于</a> </li><li data-astro-cid-37fxchfa> <a href="/zh/archive/" data-astro-cid-37fxchfa>存档</a> </li> </ul> </nav> <div class="lang-switch" role="group" aria-label="Language switcher" data-astro-cid-su6xvggn> <a href="/en/research/hardened-balancing-principle/" class lang="en" onclick="document.cookie='pref-lang=en;path=/;max-age=31536000;samesite=lax';" data-astro-cid-su6xvggn>English</a> <span class="sep" aria-hidden="true" data-astro-cid-su6xvggn>·</span> <a href="/zh/research/hardened-balancing-principle/" class="on" aria-current="true" lang="zh" onclick="document.cookie='pref-lang=zh;path=/;max-age=31536000;samesite=lax';" data-astro-cid-su6xvggn>中文</a> </div> </header>  <main id="main" class="site-main" data-astro-cid-37fxchfa>   <a href="#content" class="research-skip" data-astro-cid-63t2xjvj>Skip to article</a> <article class="research" lang="zh" id="content" data-astro-cid-63t2xjvj> <header class="research-header" data-astro-cid-63t2xjvj> <p class="research-eyebrow" data-astro-cid-63t2xjvj> 研究笔记 · Research Note  </p> <h1 class="research-title" data-astro-cid-63t2xjvj>Hardened Balancing Principle (HBP)</h1>  <p class="research-meta" data-astro-cid-63t2xjvj> <span class="research-author" data-astro-cid-63t2xjvj>Zhenyu He · Jobs Stroustrup</span>  <span class="research-meta-sep research-meta-screen-only" aria-hidden="true" data-astro-cid-63t2xjvj>·</span> <span class="research-readtime research-meta-screen-only" data-astro-cid-63t2xjvj> 阅读约 5 分钟 </span> </p>   </header> <hr class="research-rule" aria-hidden="true" data-astro-cid-63t2xjvj> <div class="research-body" data-astro-cid-63t2xjvj>  <h1 id="hardened-balancing-principle-hbp">Hardened Balancing Principle (HBP)</h1>
+<blockquote>
+<p><strong>页面用途</strong>: Caltech DSCOVR retrieval 项目 (2021.03–2022.03, with Yuk Yung and UCR co-advisor) Zhenyu 自己在 Bauer 2007 framework 基础上 generalize + 系统 benchmark 的 automatic regularization-parameter selector.</p>
+</blockquote>
+<h3 id="定义">定义</h3>
+<p><strong>Hardened Balancing Principle (HBP)</strong> 是 Bauer 2007 在 Bauer &#x26; Hohage 2005 的 Balancing Principle (BP) 基础上提出的 <strong>自动 Tikhonov 正则化参数 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span></span></span></span> 选择方法</strong>, Zhenyu 在 Caltech DSCOVR 项目中 (1) 从 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9658em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">ψ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7713em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> (Tikhonov) 起始做完整符号推导, (2) generalize 到 exponential concentration assumption, (3) 在 4 个 benchmark 上系统 stress-test 与 L-curve / GCV / Morozov discrepancy / Kawahara Bayesian 对比, (4) 采用为 DSCOVR automatic pipeline 的主 selector。</p>
+<p><strong>HBP 相对 BP 的核心优势</strong>: BP 的 Lepskij-type stopping rule 需要 (i) prior knowledge of noise level <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0379em;">δ</span></span></span></span>, (ii) tuning constant <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">κ</span></span></span></span>; HBP 通过 “minimum difference regularization parameter” 构造, <strong>两者都不需要</strong>。</p>
+<p><strong>Bauer 2007 Definition 5.1</strong> (HBP 构造骨架):</p>
+<ul>
+<li>“minimum difference regularization parameter”:
+<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7713em;"></span><span class="mord"><span class="mord mathnormal">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7713em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">min</span><span class="mopen">{</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">∈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">0</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.109em;">N</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">></span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.0278em;">D</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mclose">)</span><span class="mord text"><span class="mord"> for some </span></span><span class="mord mathnormal" style="margin-right:0.0315em;">k</span><span class="mclose">}</span></span></span></span></li>
+<li>Balancing functional (简化):
+<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">b</span><span class="mopen">(</span><span class="mord mathnormal">n</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">m</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.53em;vertical-align:-0.52em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.01em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">Φ</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight" style="margin-right:0.109em;">N</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">m</span><span class="mclose mtight">)</span><span class="mbin mtight">−</span><span class="mord mtight">Φ</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight" style="margin-right:0.109em;">N</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight">n</span><span class="mclose mtight">)</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.485em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">∥</span><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1645em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mbin mtight">−</span><span class="mord mtight"><span class="mord mathnormal mtight">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1645em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight">m</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mord mtight">∥</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.52em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></li>
+<li>HBP 选 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">λ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3419em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7027em;"><span style="top:-2.786em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></li>
+</ul>
+<h3 id="核心论点">核心论点</h3>
+<p><strong>1. 从 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9658em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">ψ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7713em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> (Tikhonov) 起始的 exponential concentration 推导</strong></p>
+<p>Zhenyu 从 Tikhonov 情形 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9658em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">ψ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7713em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> 出发, 用 Bauer 的 exponential concentration assumption, 推导出 HBP 的 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">λ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3419em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7027em;"><span style="top:-2.786em;margin-right:0.0714em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 自动选择公式。完整 90 段 derivation 含:</p>
+<ul>
+<li>Lepskij-type stopping rule 的 generalization</li>
+<li>Mathé-Pereverzev 2003 geometric framework</li>
+<li>Tikhonov → BP → HBP 的 逐步 simplification</li>
+<li>Exponential concentration assumption 的 verification 方法 (difference function 的 minimum selection)</li>
+</ul>
+<p><strong>[Future expansion]</strong> Full mathematical derivation reserved for a follow-up post; this page captures the methodology skeleton only.</p>
+<p><strong>2. 系统 stress test 结果</strong></p>
+<p>Zhenyu 在 <strong>4 个 benchmark</strong> 上同时跑 HBP 与 4 个传统方法 (L-curve / GCV / Morozov discrepancy / Kawahara Bayesian cost):</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Benchmark</th><th>配置</th><th>HBP 表现</th></tr></thead><tbody><tr><td><strong>Hansen gravity problem</strong></td><td>500-instance randomization</td><td>Automatic, 最 robust, 稳定 converge</td></tr><tr><td><strong>Golub 1979 Laplace</strong></td><td>Condition number <strong>2.88e28</strong> (Zhenyu 实测) vs paper 原 <strong>1.54e5</strong> — 比原论文更 ill-conditioned 的 stress test</td><td>Automatic, 仍然 work</td></tr><tr><td><strong>3-point linear regression</strong></td><td>Prof. King-Fai Li × Zhenyu Bayesian 化闭式解交叉验证</td><td>一致</td></tr><tr><td><strong>DSCOVR real PC2 time series</strong></td><td>2-year EPIC PC2, 实际 viewing geometry W (DSCOVR 轨道 + Earth rotation + pixelation + sun-illumination)</td><td><strong>HBP automatic λ</strong> 收敛范围与 Siteng Fan 的 manual <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">λ</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">≈</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord">1</span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">3</span></span></span></span></span></span></span></span></span></span></span></span> benchmark 匹配</td></tr></tbody></table>
+<p><strong>3. Pipeline 主 selector 决策 logic</strong> (经过 4 方法 stress-test 后的 motivated decision)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Method</th><th>DSCOVR 上表现</th><th>选 / 不选</th><th>理由</th></tr></thead><tbody><tr><td>L-curve</td><td>视觉 elbow 与理论 curvature 不一致 (<strong>axis-scale bug</strong>, 见 <a href="/zh/research/l-curve-axis-scale-ambiguity/" class="wikilink" data-wikilink="l-curve-axis-scale-ambiguity">L-Curve-Axis-Scale-Ambiguity</a>)</td><td>❌</td><td>unreliable 除非 axis-scale 校正</td></tr><tr><td>Kawahara Bayesian cost</td><td>Hansen toy 上 case-by-case 不稳定 (5/5 失败于 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">so</span><span class="mord mathnormal mtight" style="margin-right:0.0197em;">l</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">10</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mclose">]</span></span></span></span>) + DSCOVR W 下 fail</td><td>❌</td><td>not robust for arbitrary W</td></tr><tr><td>GCV</td><td>long flat region → sensitive to noise direction + underestimates best λ</td><td>❌</td><td>statistical bias</td></tr><tr><td>Morozov discrepancy</td><td>systematic error (always biased to right of L-curve elbow) + 需要 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0379em;">δ</span></span></span></span></td><td>❌</td><td>systematic bias + prior info requirement</td></tr><tr><td><strong>HBP</strong></td><td>Automatic, 不需要 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0379em;">δ</span></span></span></span> / <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">κ</span></span></span></span>, 在 DSCOVR 上表现可与 Siteng manual 结果匹配</td><td>✅</td><td><strong>最 robust 且 automatic</strong></td></tr></tbody></table>
+<p>→ <strong>HBP 的采用不是任意 choice, 而是经过 Hansen textbook 4 方法的系统 stress-test 后的 motivated decision</strong>。</p>
+<h3 id="与其他-regularization-方法对比">与其他 regularization 方法对比</h3>
+<p><strong>vs L-curve</strong> (<a href="/zh/research/反问题与正则化/" class="wikilink" data-wikilink="反问题与正则化">反问题与正则化</a> 所述经典方法):</p>
+<ul>
+<li>L-curve 需要 “拐角识别” — 要么 naked-eye (scale-dependent artifact, 见 <a href="/zh/research/l-curve-axis-scale-ambiguity/" class="wikilink" data-wikilink="l-curve-axis-scale-ambiguity">L-Curve-Axis-Scale-Ambiguity</a>), 要么计算 curvature (对 noise 敏感 + axis-scale 依赖)</li>
+<li>HBP 不需要 geometric interpretation, 完全 algebraic → 更适合 pipeline</li>
+</ul>
+<p><strong>vs GCV</strong> (Golub 1979):</p>
+<ul>
+<li>GCV 在 Golub 1979 原论文 example (condition 1.54e5) 上 work, 但 Zhenyu 复现时 condition 推到 2.88e28, 首次发现 <strong>noise-direction dependence</strong> (5 instance 中第 4 个 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">λ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3283em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.0715em;">GC</span><span class="mord mathnormal mtight" style="margin-right:0.2222em;">V</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 完全不同) → 后来系统化为 DSCOVR contribution (d) “Direction of Noise Vector Influences Regularization”</li>
+<li>HBP 对这个 geometry-dependence 更 robust</li>
+</ul>
+<p><strong>vs Morozov Discrepancy Principle</strong>:</p>
+<ul>
+<li>Discrepancy 要求 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">∥</span><span class="mord mathnormal">A</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">λ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">d</span><span class="mord">∥</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0379em;">δ</span></span></span></span>, <strong>必须预先知道 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0379em;">δ</span></span></span></span></strong>; HBP 完全 data-driven, <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal" style="margin-right:0.0379em;">δ</span></span></span></span> 不需要</li>
+</ul>
+<p><strong>vs Kawahara 2016 Bayesian cost</strong>:</p>
+<ul>
+<li>Kawahara 的 evidence maximization 在特定 toy model work, 但 <code>|x_{sol}|</code> 大时 (e.g., <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mopen">[</span><span class="mord">10</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">1</span><span class="mclose">]</span></span></span></span>) 在 Hansen toy 上 5/5 fail; DSCOVR 的 W 下也 fail</li>
+<li>HBP 在 Zhenyu 的 benchmark 中 <strong>唯一在所有 4 benchmark 都 work</strong> 的方法</li>
+</ul>
+<h3 id="downstream-influence-方法学影响力">Downstream influence (方法学影响力)</h3>
+<p>Subsequent collaborators applied HBP to extended regimes (low / high clouds), demonstrating methodology transfer beyond the original PC2 land/ocean retrieval.</p>
+<h3 id="开放问题">开放问题</h3>
+<ul>
+<li><strong>非线性 forward operator</strong> 下 HBP 是否仍然 valid? Bauer 2007 原 framework 是 linear Tikhonov, 非线性拓展需要重新推导 exponential concentration 性质</li>
+<li><strong>高维 regime</strong> (n > 10000) 下 HBP 的 computational cost vs. GCV (需要 trace of hat matrix) 的实际对比</li>
+<li><strong>Bayesian 解释</strong>: HBP 在 Bayesian framework 下是否对应某 specific hyperprior? 与 <a href="/zh/research/gp-贝叶斯反演/" class="wikilink" data-wikilink="gp-贝叶斯反演">GP-贝叶斯反演</a> 的 Type-II MLE 是否可 unify?</li>
+</ul>
+<p><strong>[Future expansion]</strong> Full math derivations, Bauer 2007 reading notes, and Mathé-Pereverzev 2003 geometric framework details reserved for a follow-up post.</p>
+<h3 id="来源">来源</h3>
+<ul>
+<li>
+<p><code>research_wiki/projects/mcmc_retrieval/overview.md</code> §贡献 (a) Hardened Balancing Principle (HBP) 应用 + 数学展开 (2021-09-27 + paper draft 90-paragraph section)</p>
+</li>
+<li>
+<p><code>research_wiki/projects/mcmc_retrieval/overview.md</code> §🌟 贡献 (a) 扩展: HBP 在 DSCOVR case 上的系统测试</p>
+</li>
+<li>
+<p><code>research_wiki/projects/mcmc_retrieval/overview.md</code> §贡献 (a) 扩展 Table (L-curve / Kawahara / GCV / Discrepancy / HBP 决策 logic)</p>
+</li>
+<li>
+<p>HBP mathematical writeup with collaborator acknowledgments (working manuscript, not publicly submitted).</p>
+</li>
+<li>
+<p>Bauer 2007 — HBP 方法源论文 (Definition 5.1)</p>
+</li>
+<li>
+<p>Bauer &#x26; Hohage 2005 — Balancing Principle 前身</p>
+</li>
+<li>
+<p>Mathé &#x26; Pereverzev 2003 — geometric framework</p>
+</li>
+<li>
+<p><code>[待补充]</code> Zhenyu research-angle 独立 wiki 中的 HBP 学习笔记 (合并后此页扩展到 full derivation depth)</p>
+</li>
+</ul>
+<h3 id="相关页面">相关页面</h3>
+<ul>
+<li><a href="/zh/research/mcmc-贝叶斯反演/" class="wikilink" data-wikilink="mcmc-贝叶斯反演">MCMC-贝叶斯反演</a> — skill 页 (含 Caltech DSCOVR 4 原创贡献 subsection)</li>
+<li><a href="/zh/research/反问题与正则化/" class="wikilink" data-wikilink="反问题与正则化">反问题与正则化</a> — parent concept (HBP 是其 automatic parameter selection 分支)</li>
+<li><a href="/zh/research/l-curve-axis-scale-ambiguity/" class="wikilink" data-wikilink="l-curve-axis-scale-ambiguity">L-Curve-Axis-Scale-Ambiguity</a> — sibling concept (同 batch 建立的 DSCOVR 技术发现)</li>
+<li><a href="/zh/research/gp-贝叶斯反演/" class="wikilink" data-wikilink="gp-贝叶斯反演">GP-贝叶斯反演</a> — Bayesian 对偶视角 (HBP 的 Bayesian interpretation 是开放问题)</li>
+<li><a href="/zh/portfolio/caltech-dscovr-research/" class="wikilink" data-wikilink="caltech-dscovr-research">Caltech-DSCOVR-Research</a> — 项目 experience page (从 PKU-Undergraduate-Research 拆出)</li>
+<li><a href="/zh/pages/yuk-yung/" class="wikilink" data-wikilink="yuk-yung">Yuk-Yung</a> — PI (Caltech)</li>
+<li><a href="/zh/pages/king-fai-li/" class="wikilink" data-wikilink="king-fai-li">King-Fai-Li</a> — co-advisor (UCR)</li>
+<li> — HBP 采用决策是 motivated stress-test 的 pivotal moment</li>
+<li></li>
+</ul>
+<hr>  </div>  </article>  </main> <footer class="site-footer" data-astro-cid-37fxchfa> <p data-astro-cid-37fxchfa>
+© 2026 Zhenyu He · Jobs Stroustrup
+        · <a href="/atom.xml" data-astro-cid-37fxchfa>RSS</a>
+· <a href="/research/atom.xml" data-astro-cid-37fxchfa>Research RSS</a>
+· <a href="/archive/" data-astro-cid-37fxchfa>Archive (frozen 2021-10)</a> </p> <p class="build-date" data-astro-cid-37fxchfa>
+Built 2026-07-12 </p> </footer> </body> </html> 

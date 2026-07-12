@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+Disallow: /2020/10/06/recommended-ted-on-10062020/
+Disallow: /2020/11/08/reflection-on-2020-election-in-united-states/
+Disallow: /2020/11/11/rrecommended-ted-on-11102020/
+Disallow: /2020/12/01/reflection-and-prediction-on-the-next-presidential-election/
+Disallow: /2020/12/20/prediction-on-2021-real-estates-in-china/
+Disallow: /2021/04/13/reflection-on-coronavirus-situation-in-china/
+Disallow: /galleries/
+Disallow: /archive/private/
+
+Sitemap: https://jobsstroustrup.github.io/sitemap-index.xml

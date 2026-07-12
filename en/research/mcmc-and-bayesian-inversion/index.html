@@ -1,0 +1,177 @@
+<!DOCTYPE html><html lang="en" data-collection="research" data-astro-cid-37fxchfa> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/favicon-180.png"><link rel="manifest" href="/site.webmanifest"><link rel="preload" as="font" type="font/woff2" crossorigin href="/_astro/eb-garamond-latin-700-normal.woff2" onerror="this.remove()"><link rel="preload" as="font" type="font/woff2" crossorigin href="/_astro/inter-latin-400-normal.woff2" onerror="this.remove()"><title>MCMC &amp; Bayesian Inversion</title><meta name="description" content="MCMC &#38; Bayesian Inversion"><link rel="canonical" href="https://jobsstroustrup.github.io/en/research/mcmc-and-bayesian-inversion/"><meta property="og:title" content="MCMC &#38; Bayesian Inversion"><meta property="og:description" content="MCMC &#38; Bayesian Inversion"><meta property="og:type" content="website"><meta property="og:url" content="https://jobsstroustrup.github.io/en/research/mcmc-and-bayesian-inversion/"><meta property="og:site_name" content="Zhenyu He · Jobs Stroustrup"><meta property="og:image" content="https://jobsstroustrup.github.io/hero/sgs-hero-1280.jpg"><meta property="og:locale" content="en_US"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="MCMC &#38; Bayesian Inversion"><meta name="twitter:description" content="MCMC &#38; Bayesian Inversion"><meta name="twitter:image" content="https://jobsstroustrup.github.io/hero/sgs-hero-1280.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Zhenyu He","alternateName":"Jobs Stroustrup","jobTitle":"Researcher","url":"https://jobsstroustrup.github.io/","image":"https://jobsstroustrup.github.io/hero/sgs-hero-1280.jpg","description":"Physicist-turned-researcher-and-entrepreneur. Trained at PKU, Caltech, and UC Berkeley; based in Berkeley, CA.","alumniOf":[{"@type":"CollegeOrUniversity","name":"Peking University","url":"https://english.pku.edu.cn/"},{"@type":"CollegeOrUniversity","name":"University of California, Berkeley","url":"https://www.berkeley.edu/"}],"knowsAbout":["Atmospheric physics","Large-eddy simulation","Bayesian inverse problems","Satellite remote sensing","Climate dynamics","High-performance computing","Methane MRV","Nuclear-winter modelling","Tropical convection","Walker circulation"],"worksFor":{"@type":"Organization","name":"TerraByte Intelligence","description":"Co-Founder, TerraByte Intelligence (YC Spring 2026)"},"knowsLanguage":["en","zh"],"sameAs":["https://github.com/JobsStroustrup","https://orcid.org/0009-0005-1942-9469","https://scholar.google.com/citations?user=OK6sAb0AAAAJ"]}</script><link rel="alternate" hreflang="en" href="https://jobsstroustrup.github.io/en/research/mcmc-and-bayesian-inversion/"><link rel="alternate" hreflang="zh" href="https://jobsstroustrup.github.io/zh/research/mcmc-and-bayesian-inversion/"><link rel="alternate" hreflang="x-default" href="https://jobsstroustrup.github.io/en/research/mcmc-and-bayesian-inversion/"><meta property="og:type" content="article"> <meta property="og:title" content="MCMC &#38; Bayesian Inversion"> <meta property="og:description" content="MCMC &#38; Bayesian Inversion"> <meta property="og:locale" content="en_US"> <meta property="article:author" content="Zhenyu He · Jobs Stroustrup"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="MCMC &#38; Bayesian Inversion"> <meta name="twitter:description" content="MCMC &#38; Bayesian Inversion"> <link rel="stylesheet" media="print" href="/styles/research-print.css"> <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"MCMC & Bayesian Inversion","author":{"@type":"Person","name":"Zhenyu He · Jobs Stroustrup"},"inLanguage":"en"}</script> <link rel="stylesheet" href="/_astro/BaseLayout.j-OfamCa.css">
+<link rel="stylesheet" href="/_astro/ResearchLayout.DDpCI2AE.css"></head> <body data-astro-cid-37fxchfa>  <a href="#main" class="skip-nav" data-astro-cid-37fxchfa>Skip to main content</a> <header class="site-nav" data-astro-cid-37fxchfa> <a href="/en/" class="wordmark" data-astro-cid-37fxchfa>Zhenyu He · Jobs Stroustrup</a> <nav aria-label="Primary navigation" data-astro-cid-37fxchfa> <ul class="nav-list" data-astro-cid-37fxchfa> <li data-astro-cid-37fxchfa> <a href="/en/research/" data-astro-cid-37fxchfa>Research</a> </li><li data-astro-cid-37fxchfa> <a href="/en/blog/" data-astro-cid-37fxchfa>Blog</a> </li><li data-astro-cid-37fxchfa> <a href="/en/portfolio/" data-astro-cid-37fxchfa>Portfolio</a> </li><li data-astro-cid-37fxchfa> <a href="/en/about/" data-astro-cid-37fxchfa>About</a> </li><li data-astro-cid-37fxchfa> <a href="/en/archive/" data-astro-cid-37fxchfa>Archive</a> </li> </ul> </nav> <div class="lang-switch" role="group" aria-label="Language switcher" data-astro-cid-su6xvggn> <a href="/en/research/mcmc-and-bayesian-inversion/" class="on" aria-current="true" lang="en" onclick="document.cookie='pref-lang=en;path=/;max-age=31536000;samesite=lax';" data-astro-cid-su6xvggn>English</a> <span class="sep" aria-hidden="true" data-astro-cid-su6xvggn>·</span> <a href="/zh/research/mcmc-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%8F%8D%E6%BC%94/" class lang="zh" onclick="document.cookie='pref-lang=zh;path=/;max-age=31536000;samesite=lax';" data-astro-cid-su6xvggn>中文</a> </div> </header>  <main id="main" class="site-main" data-astro-cid-37fxchfa>   <a href="#content" class="research-skip" data-astro-cid-63t2xjvj>Skip to article</a> <article class="research" lang="en" id="content" data-astro-cid-63t2xjvj> <header class="research-header" data-astro-cid-63t2xjvj> <p class="research-eyebrow" data-astro-cid-63t2xjvj> Research Note  </p> <h1 class="research-title" data-astro-cid-63t2xjvj>MCMC &amp; Bayesian Inversion</h1>  <p class="research-meta" data-astro-cid-63t2xjvj> <span class="research-author" data-astro-cid-63t2xjvj>Zhenyu He · Jobs Stroustrup</span>  <span class="research-meta-sep research-meta-screen-only" aria-hidden="true" data-astro-cid-63t2xjvj>·</span> <span class="research-readtime research-meta-screen-only" data-astro-cid-63t2xjvj> 5 min read </span> </p>   </header> <hr class="research-rule" aria-hidden="true" data-astro-cid-63t2xjvj> <div class="research-body" data-astro-cid-63t2xjvj>  <h3 id="proficiency">Proficiency</h3>
+<p>Proficient</p>
+<h3 id="description">Description</h3>
+<p><strong>MCMC sampling</strong></p>
+<ul>
+<li><code>emcee</code> (affine-invariant ensemble sampler, Foreman-Mackey 2013) on real problems</li>
+<li>Log-space reparameterization for scale-spanning parameters</li>
+<li>Trace + corner plots for chain diagnostics</li>
+<li>Practical handling of MCMC multi-process × BLAS thread collision (<code>OMP_NUM_THREADS=1</code> + 7 other env vars)</li>
+</ul>
+<p><strong>Gaussian Process regression</strong></p>
+<ul>
+<li>RBF kernel + hierarchical MCMC sampling of hyperparameters</li>
+<li>Spatial × Temporal separable kernel <code>KS ⊗ KT</code> to avoid O(N³) joint covariance</li>
+<li>HEALPix spherical grid as GP spatial support (healpy)</li>
+<li>Snapshot-level and pixelwise posterior covariances implemented in closed form</li>
+</ul>
+<p><strong>Regularization parameter selection for inverse problems</strong></p>
+<ul>
+<li>L-Curve method</li>
+<li>L-Curve Curvature method</li>
+<li>Generalized Cross Validation (GCV) — hand-implemented from Golub 1979</li>
+<li>Morozov discrepancy principle</li>
+<li>All four compared on Hansen gravity-problem example and on real DSCOVR data</li>
+</ul>
+<p><strong>Numerical linear algebra</strong></p>
+<ul>
+<li><code>scipy.linalg.solve(..., assume_a="pos")</code> Cholesky instead of explicit inverse</li>
+<li><code>np.linalg.slogdet</code> vs <code>log(det)</code> for underflow safety</li>
+<li>SVD + Tikhonov regularization (MATLAB <code>csvd</code>, etc.)</li>
+<li>Matrix condition number analysis</li>
+</ul>
+<p><strong>Toolchain</strong></p>
+<ul>
+<li>Python: emcee, scipy, numpy, healpy, astropy, pandas</li>
+<li>MATLAB: method verification + Hansen-book reproductions</li>
+<li>Mathematica: symbolic derivations / probability formalism checks</li>
+</ul>
+<h3 id="self-study-path-worth-highlighting">Self-study path (worth highlighting)</h3>
+<p>In 2021 self-studied <strong>Hansen’s <em>Discrete Inverse Problems</em></strong> + <strong>Bishop’s PRML</strong> + <strong>Golub 1979 original GCV paper</strong>, progressively reproducing textbook and original-paper numerical experiments — the “textbook → original paper → reproduction → applied to new problem” chain.</p>
+<h3 id="used-in">Used In</h3>
+<ul>
+<li><a href="/en/research/pku-undergraduate-research/" class="wikilink" data-wikilink="pku-undergraduate-research">Undergraduate Research @ Peking University &amp; Caltech/UCR</a> — MCMC Retrieval Methods project (Mar 2021 — Mar 2022)</li>
+<li> — full research-code + study-notes repo</li>
+<li>Transferable to: any ill-posed inverse problem (climate retrieval, medical imaging, geophysical inversion, exoplanet spin-mapping)</li>
+</ul>
+<h3 id="methodology-concept-pages">Methodology Concept Pages</h3>
+<ul>
+<li><a href="/en/research/inverse-problems-and-regularization/" class="wikilink" data-wikilink="反问题与正则化">Inverse Problems &amp; Regularization</a> — frequentist view</li>
+<li><a href="/en/research/gaussian-process-bayesian-inversion/" class="wikilink" data-wikilink="gp-贝叶斯反演">Gaussian Process Bayesian Inversion</a> — Bayesian view</li>
+<li><a href="/en/research/hardened-balancing-principle/" class="wikilink" data-wikilink="hardened-balancing-principle">Hardened Balancing Principle (HBP)</a> — HBP automatic regularization parameter selection</li>
+<li><a href="/en/research/l-curve-axis-scale-ambiguity/" class="wikilink" data-wikilink="l-curve-axis-scale-ambiguity">L-Curve Axis-Scale Ambiguity (Hansen σ² vs σ⁴ bug catch)</a> — Hansen σ²/σ⁴ 80× bug open question</li>
+</ul>
+<h3 id="caltech-dscovr-4-original-contributions-2021-2022-advised-by-yuk-yung--king-fai-li">Caltech DSCOVR 4 Original Contributions (2021-2022, Advised by Yuk Yung + King-Fai Li)</h3>
+<h4 id="contribution-c-hansen-textbook-σ-vs-σ-bug-catch-80-deviation">Contribution (c): Hansen Textbook σ² vs σ⁴ Bug Catch (80× Deviation)</h4>
+<p><strong>Core achievement</strong>: As an undergraduate, using independent SVD + filter-factor derivation, found a <strong>formula-level bug</strong> in Hansen’s classic <em>Discrete Inverse Problems</em> (SIAM 2010) — a foundational textbook — not a typo, but a substantive error causing <strong>numerical results to differ by ~80×</strong>.</p>
+<p><strong>Numerical comparison</strong> (same toy model + PC2 data):</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Formula</th><th>Toy model λ</th><th>PC2 λ</th><th>Accuracy</th></tr></thead><tbody><tr><td><strong>Hansen-student correct version (σ⁴)</strong></td><td><strong>0.0251</strong> ✓</td><td><strong>0.0575</strong> ✓</td><td>Consistent with naked-eye elbow + theoretical value under axis-image</td></tr><tr><td><strong>Hansen-book erroneous version (σ²)</strong></td><td><strong>1.995</strong> ✗</td><td><strong>1.995</strong> ✗</td><td><strong>80× overestimate, complete failure</strong></td></tr></tbody></table>
+<p><strong>Innovative discovery</strong>: independently identified an <strong>L-curve axis-scale ambiguity</strong> not discussed by Hansen:</p>
+<blockquote>
+<p><em>“Hansen didn’t talk about whether we should control the units of x-axis and y-axis of L-curve to be the same. In his book, he showed two L-curve figures, but both didn’t control the units to be the same.”</em> (discovered 2022-01-08)</p>
+</blockquote>
+<p><strong>3-step self-correction cycle</strong> (11/29 → 12/06 → 01/08): self-discovered the formula error → hypothesized accumulation of errors → refuted that and correctly attributed it to axis-scale ambiguity — demonstrates intellectual honesty + iteration.</p>
+<p><strong>Physical-evidence discipline</strong>: simultaneously preserved <strong>Hansen original-version PDF (denominator σ²) + Hansen-student correct-version PDF (denominator σ⁴) side-by-side under <code>LCurve_HansenMistake_WeRectify_Test/</code> directory</strong> — “inconvenient-evidence retention” spirit, corresponding to .</p>
+<p><strong>Community contribution</strong>: posed <strong>3 open questions</strong> to the academic community — (1) Should L-curve axes be controlled to the same units? (2) Is a senior collaborator’s elbow λ=1e-3 conclusion a scale artifact? (3) When applying L-curve, in which cases should one tune, and how?</p>
+<h4 id="contribution-b-pre-whitening-l-curve-innovation--methodological-restraint">Contribution (b): Pre-whitening L-curve Innovation + Methodological Restraint</h4>
+<p><strong>Technical innovation</strong>: under RBF kernel (non-diagonal covariance <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>), transform into the whitened space:
+<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.2392em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.5834em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1/2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1166em;"><span></span></span></span></span></span></span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:1em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.2392em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.5834em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">e</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1/2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1166em;"><span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.0359em;">y</span><span class="mpunct">,</span><span class="mspace" style="margin-right:1em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1614em;vertical-align:-0.1166em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.5834em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">e</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1/2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1166em;"><span></span></span></span></span></span></span><span class="mord mathnormal">A</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.5834em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1/2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1166em;"><span></span></span></span></span></span></span></span></span></span></p>
+<p><strong>Problem diagnosis</strong>: discovered that <strong>L-curve x/y values become non-monotonic under non-diagonal <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></strong> → structural limit: L-curve corresponds to pure Tikhonov, and non-diagonal <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> cannot derive into Tikhonov form; “modified L-curve” is overly sensitive to <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">e</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> priors.</p>
+<p><strong>Independent judgment — methodological restraint (2022-01-23 group meeting verbatim)</strong>:</p>
+<p>(Declined to tune <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>, <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">e</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> priors to engineer a target λ — methodological commitment.)</p>
+<p><strong>Methodology-maturity evidence</strong>: “I systematically diagnose the limitations of a method I myself proposed” — an undergraduate refusing the advisor’s implicit preference to engineer the desired λ value, a research-integrity signature. Corresponds to  Moment 3.</p>
+<h4 id="contribution-a-hardened-balancing-principle-hbp-90-paragraph-writeup">Contribution (a): Hardened Balancing Principle (HBP) 90-paragraph Writeup</h4>
+<p><strong>Theoretical framework</strong>: starting from <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9658em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">ψ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7713em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> (Tikhonov), via Bauer 2007 exponential concentration assumption → automatic parameter-selection HBP <code>λ_{n+}</code> formula.</p>
+<p><strong>Systematic stress test</strong>:</p>
+<ul>
+<li>Hansen gravity problem (500-instance, condition number ~2.88e28 vs reported ~1.54e5)</li>
+<li>Golub 1979 Laplace (condition number reaching 2.88e28)</li>
+<li>3-point linear regression (Prof. King-Fai Li × Zhenyu Bayesian-form closed-solution cross-validation)</li>
+<li>DSCOVR real PC2 time series</li>
+</ul>
+<p><strong>Conclusion</strong>: HBP performs the best, requiring no prior knowledge of noise level δ or tuning constant κ.</p>
+<p><strong>Output</strong>: the <strong>90-paragraph math section writeup</strong> in <code>internal-only manuscript</code> — equivalent in scale to a standalone technical note/tutorial, containing the full derivation from Tikhonov to HBP.</p>
+<h4 id="contribution-d-direction-of-noise-vector-influences-regularization-original-discovery">Contribution (d): Direction of Noise Vector Influences Regularization (Original Discovery)</h4>
+<p><strong>Original discovery (2021-09-20 verbatim)</strong>:</p>
+<blockquote>
+<p><em>“When I did numerical tests on L-Curve, GCV etc., <strong>I found out the direction of the noise vector plays a big role</strong> in the performance of statistical criteria. <strong>I did a literature search and it seems nobody has studied this topic.</strong>”</em></p>
+</blockquote>
+<p><strong>4-method failure-mode catalog</strong>:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Method</th><th>Failure condition</th></tr></thead><tbody><tr><td>L-curve</td><td>|x_sol| large, or <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">dd</span></span></span></span> near EV1</td></tr><tr><td>Kawahara Bayesian</td><td>|x_sol| large (5/5 fail for x_sol=[10,1])</td></tr><tr><td>GCV</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span></span></span></span> near EV1 and <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">dd</span></span></span></span> near EV2</td></tr><tr><td>Discrepancy principle</td><td>Always works, but introduces systematic error</td></tr></tbody></table>
+<p><strong>Origin — accidental discovery</strong>: when reproducing Golub 1979 GCV (condition 2.88e28), the 4th of 5 instances had a completely different λ_GCV → Hansen-gravity 500-instance validation aggregated → systematized into contribution (d). <strong>Independent discovery + literature-gap awareness</strong> (with HBP later extended by a subsequent collaborator to PC1/PC4 clouds, forming a methodology-influence chain).</p>
+<p><strong>Cross-language fluency</strong> (within this single 11-month project):</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Language</th><th>Task taken</th></tr></thead><tbody><tr><td><strong>IDL</strong></td><td>OOP MCMC class (inheriting Yuk Yung lab convention)</td></tr><tr><td><strong>MATLAB</strong></td><td>Hansen-book gravity problem replication + csvd</td></tr><tr><td><strong>Python</strong></td><td>Kawahara CUDA library bootstrap (remote workstation, Anaconda) + emcee + healpy</td></tr><tr><td><strong>Mathematica</strong></td><td>Symbolic curvature derivations (calculation_4_cal_deriva.nb + calculation_5_cal_deriva.nb)</td></tr><tr><td><strong>R</strong></td><td>Metropolis-Hastings baseline for cross-validation</td></tr></tbody></table>
+<p><strong>29 group_meeting pptx</strong> sustained trajectory (Mar 2021 → Mar 2022), together with Walker paper v3→v6 drafting (Sep-Oct 2021) + nwp_hw 4 assignments (Oct-Dec 2021) constitutes the “3-track parallel Sep-Dec 2021” evidence of  Moment 4.</p>  </div>  </article>  </main> <footer class="site-footer" data-astro-cid-37fxchfa> <p data-astro-cid-37fxchfa>
+© 2026 Zhenyu He · Jobs Stroustrup
+        · <a href="/atom.xml" data-astro-cid-37fxchfa>RSS</a>
+· <a href="/research/atom.xml" data-astro-cid-37fxchfa>Research RSS</a>
+· <a href="/archive/" data-astro-cid-37fxchfa>Archive (frozen 2021-10)</a> </p> <p class="build-date" data-astro-cid-37fxchfa>
+Built 2026-07-12 </p> </footer> </body> </html> 

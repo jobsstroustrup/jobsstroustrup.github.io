@@ -1,0 +1,98 @@
+<!DOCTYPE html><html lang="en" data-collection="research" data-astro-cid-37fxchfa> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/favicon-180.png"><link rel="manifest" href="/site.webmanifest"><link rel="preload" as="font" type="font/woff2" crossorigin href="/_astro/eb-garamond-latin-700-normal.woff2" onerror="this.remove()"><link rel="preload" as="font" type="font/woff2" crossorigin href="/_astro/inter-latin-400-normal.woff2" onerror="this.remove()"><title>Claude Code Skill Authoring Methodology</title><meta name="description" content="Claude Code Skill Authoring Methodology"><link rel="canonical" href="https://jobsstroustrup.github.io/en/research/claude-code-skill-authoring-methodology/"><meta property="og:title" content="Claude Code Skill Authoring Methodology"><meta property="og:description" content="Claude Code Skill Authoring Methodology"><meta property="og:type" content="website"><meta property="og:url" content="https://jobsstroustrup.github.io/en/research/claude-code-skill-authoring-methodology/"><meta property="og:site_name" content="Zhenyu He · Jobs Stroustrup"><meta property="og:image" content="https://jobsstroustrup.github.io/hero/sgs-hero-1280.jpg"><meta property="og:locale" content="en_US"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Claude Code Skill Authoring Methodology"><meta name="twitter:description" content="Claude Code Skill Authoring Methodology"><meta name="twitter:image" content="https://jobsstroustrup.github.io/hero/sgs-hero-1280.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Zhenyu He","alternateName":"Jobs Stroustrup","jobTitle":"Researcher","url":"https://jobsstroustrup.github.io/","image":"https://jobsstroustrup.github.io/hero/sgs-hero-1280.jpg","description":"Physicist-turned-researcher-and-entrepreneur. Trained at PKU, Caltech, and UC Berkeley; based in Berkeley, CA.","alumniOf":[{"@type":"CollegeOrUniversity","name":"Peking University","url":"https://english.pku.edu.cn/"},{"@type":"CollegeOrUniversity","name":"University of California, Berkeley","url":"https://www.berkeley.edu/"}],"knowsAbout":["Atmospheric physics","Large-eddy simulation","Bayesian inverse problems","Satellite remote sensing","Climate dynamics","High-performance computing","Methane MRV","Nuclear-winter modelling","Tropical convection","Walker circulation"],"worksFor":{"@type":"Organization","name":"TerraByte Intelligence","description":"Co-Founder, TerraByte Intelligence (YC Spring 2026)"},"knowsLanguage":["en","zh"],"sameAs":["https://github.com/JobsStroustrup","https://orcid.org/0009-0005-1942-9469","https://scholar.google.com/citations?user=OK6sAb0AAAAJ"]}</script><link rel="alternate" hreflang="en" href="https://jobsstroustrup.github.io/en/research/claude-code-skill-authoring-methodology/"><link rel="alternate" hreflang="zh" href="https://jobsstroustrup.github.io/zh/research/claude-code-skill-authoring-methodology/"><link rel="alternate" hreflang="x-default" href="https://jobsstroustrup.github.io/en/research/claude-code-skill-authoring-methodology/"><meta property="og:type" content="article"> <meta property="og:title" content="Claude Code Skill Authoring Methodology"> <meta property="og:description" content="Claude Code Skill Authoring Methodology"> <meta property="og:locale" content="en_US"> <meta property="article:author" content="Zhenyu He · Jobs Stroustrup"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="Claude Code Skill Authoring Methodology"> <meta name="twitter:description" content="Claude Code Skill Authoring Methodology"> <link rel="stylesheet" media="print" href="/styles/research-print.css"> <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Claude Code Skill Authoring Methodology","author":{"@type":"Person","name":"Zhenyu He · Jobs Stroustrup"},"inLanguage":"en"}</script> <link rel="stylesheet" href="/_astro/BaseLayout.j-OfamCa.css">
+<link rel="stylesheet" href="/_astro/ResearchLayout.DDpCI2AE.css"></head> <body data-astro-cid-37fxchfa>  <a href="#main" class="skip-nav" data-astro-cid-37fxchfa>Skip to main content</a> <header class="site-nav" data-astro-cid-37fxchfa> <a href="/en/" class="wordmark" data-astro-cid-37fxchfa>Zhenyu He · Jobs Stroustrup</a> <nav aria-label="Primary navigation" data-astro-cid-37fxchfa> <ul class="nav-list" data-astro-cid-37fxchfa> <li data-astro-cid-37fxchfa> <a href="/en/research/" data-astro-cid-37fxchfa>Research</a> </li><li data-astro-cid-37fxchfa> <a href="/en/blog/" data-astro-cid-37fxchfa>Blog</a> </li><li data-astro-cid-37fxchfa> <a href="/en/portfolio/" data-astro-cid-37fxchfa>Portfolio</a> </li><li data-astro-cid-37fxchfa> <a href="/en/about/" data-astro-cid-37fxchfa>About</a> </li><li data-astro-cid-37fxchfa> <a href="/en/archive/" data-astro-cid-37fxchfa>Archive</a> </li> </ul> </nav> <div class="lang-switch" role="group" aria-label="Language switcher" data-astro-cid-su6xvggn> <a href="/en/research/claude-code-skill-authoring-methodology/" class="on" aria-current="true" lang="en" onclick="document.cookie='pref-lang=en;path=/;max-age=31536000;samesite=lax';" data-astro-cid-su6xvggn>English</a> <span class="sep" aria-hidden="true" data-astro-cid-su6xvggn>·</span> <a href="/zh/research/claude-skill%E5%BC%80%E5%8F%91%E6%96%B9%E6%B3%95%E8%AE%BA/" class lang="zh" onclick="document.cookie='pref-lang=zh;path=/;max-age=31536000;samesite=lax';" data-astro-cid-su6xvggn>中文</a> </div> </header>  <main id="main" class="site-main" data-astro-cid-37fxchfa>   <a href="#content" class="research-skip" data-astro-cid-63t2xjvj>Skip to article</a> <article class="research" lang="en" id="content" data-astro-cid-63t2xjvj> <header class="research-header" data-astro-cid-63t2xjvj> <p class="research-eyebrow" data-astro-cid-63t2xjvj> Research Note  </p> <h1 class="research-title" data-astro-cid-63t2xjvj>Claude Code Skill Authoring Methodology</h1>  <p class="research-meta" data-astro-cid-63t2xjvj> <span class="research-author" data-astro-cid-63t2xjvj>Zhenyu He · Jobs Stroustrup</span>  <span class="research-meta-sep research-meta-screen-only" aria-hidden="true" data-astro-cid-63t2xjvj>·</span> <span class="research-readtime research-meta-screen-only" data-astro-cid-63t2xjvj> 4 min read </span> </p>   </header> <hr class="research-rule" aria-hidden="true" data-astro-cid-63t2xjvj> <div class="research-body" data-astro-cid-63t2xjvj>  <h3 id="definition">Definition</h3>
+<p><strong>Claude Code Skill</strong> is the new paradigm Anthropic released in late 2025: package complex multi-step agent workflows as a standardized, auto-discoverable “skill” loadable by Claude Code CLI. Minimum unit is a directory containing:</p>
+<ul>
+<li>One <code>SKILL.md</code> (frontmatter <code>name</code> / <code>description</code> / <code>allowed-tools</code>; body is the markdown workflow)</li>
+<li>Any number of auxiliary data/rule files (persona, examples, blocklists, etc.)</li>
+<li>Optional scripts or tools (shell, AppleScript, etc.)</li>
+</ul>
+<p>On top of that baseline, Zhenyu has developed his own <strong>preferred Skill architecture paradigm</strong> — the core of which is not “call the API” but “<strong>engineer a recurring task into an agent that Claude can safely, iteratively, and self-improvingly execute</strong>.”</p>
+<h3 id="core-arguments-zhenyus-skill-architecture-paradigm">Core Arguments (Zhenyu’s Skill Architecture Paradigm)</h3>
+<p><strong>1. Phased, explicit workflow</strong></p>
+<ul>
+<li>Split the agent’s work into clear Phases in SKILL.md (e.g., “open target → loop over objects → produce summary”)</li>
+<li>Each phase lists concrete steps (screenshot → identify → decide → execute)</li>
+<li>Hard-code known UI/interaction positions so the agent doesn’t need to “explore”</li>
+</ul>
+<p><strong>2. Separating data from logic</strong></p>
+<ul>
+<li><code>SKILL.md</code> = workflow (How)</li>
+<li>(persona file) / profile files = user/scenario context (Who)</li>
+<li>(examples corpus) = style corpus / few-shot (What tone)</li>
+<li>(blocklist file) / (safe-action file) / rule files = hard rules (Must / Must-not)</li>
+<li>(memory file) / structured journal = long-term memory (State)</li>
+<li>Benefit: each dimension can evolve independently; context can be loaded selectively rather than all-at-once</li>
+</ul>
+<p><strong>3. Human-in-the-loop + data flywheel</strong></p>
+<ul>
+<li>Before any high-risk action (send message, place order, truly modify external state), pause and present draft to user</li>
+<li>User’s “ok” or edited final version is <strong>auto-written back to examples / memory files</strong> — this sample immediately informs the next generation</li>
+<li>Flywheel effect: the more the skill is used, the closer the output gets to the user’s personal style; <strong>no training needed, personalization via accumulated in-context examples</strong></li>
+</ul>
+<p><strong>4. Tiered behavior rules</strong></p>
+<ul>
+<li>Hard rules (blocklist): skip entirely</li>
+<li>Semi-hard rules (like-only): degrade to a safe action</li>
+<li>Frequency/interval rules (e.g., “Zhang Chen motormouth rule”): time-dimension dedup</li>
+<li>Persona-level soft rules (e.g., “forbid ‘envy’ toward X”): fine-grained linguistic preference</li>
+<li>Auto-update triggers for each layer must be designed carefully: only “user explicitly instructs” OR “Claude recommends + user confirms” should write to the rule files, to avoid a one-off edit being learned as a long-term preference</li>
+</ul>
+<p><strong>5. Structured long-term memory vs runtime context</strong></p>
+<ul>
+<li>Files like (memory file) are not logs but <strong>entity-organized journals</strong>: one section per person with header + background + current location + dated updates appended inside their section</li>
+<li>Benefit: next time a post from the same friend appears, all their existing context is one fetch away</li>
+<li>Contrast: a pure timeline log is O(n) to search; entity-sectioned journals are O(1)</li>
+</ul>
+<p><strong>6. Skill = the minimum unit for “productizing” LLM capability</strong></p>
+<ul>
+<li>Differs from “write a Python script”: skills embrace the fact that agents aren’t deterministic, delegating uncertainty to the LLM’s judgment + human backstop rather than hard-coding every branch</li>
+<li>Differs from “just chat with ChatGPT”: skills persist reusable context and rules, so you don’t re-explain every session</li>
+</ul>
+<h3 id="anti-patterns">Anti-patterns</h3>
+<p><strong>Anti-pattern A: Skill as “prompt template”</strong> — Single SKILL.md stuffed with all rules/samples/persona. Maintenance nightmare, context explosion. Zhenyu’s paradigm: split into multiple markdown files by dimension.</p>
+<p><strong>Anti-pattern B: Full automation, no human-in-loop</strong> — Looks efficient, but external actions once wrong can’t be rolled back (message already sent, order placed). Zhenyu’s paradigm: pause before high-risk actions; low-risk actions (like, screenshot) can run freely.</p>
+<p><strong>Anti-pattern C: Memory files are write-only</strong> — Some implementations log but never read back — effectively no memory. Zhenyu’s paradigm: SKILL.md explicitly lists “Before Starting” files to read.</p>
+<h3 id="practiced-skill-projects">Practiced Skill Projects</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Skill</th><th>Purpose</th><th>Core data files</th></tr></thead><tbody><tr><td>private personal automation project (WeChat Moments interaction)</td><td>WeChat Moments auto-like + comment</td><td>(persona file) / (examples corpus) / (blocklist file) / (safe-action file) / (memory file)</td></tr><tr><td><em>(future)</em></td><td></td><td></td></tr></tbody></table>
+<h3 id="open-questions">Open Questions</h3>
+<ul>
+<li><strong>Shared infrastructure across skills</strong>: if multiple skills exist, should (persona file) (user identity) be shared or duplicated? Plan to build a universal <code>~/.claude/personal-context/</code> referenced by all skills?</li>
+<li><strong>Skill versioning and rollback</strong>: when a skill auto-updates blocklist/examples, how to roll back a bad update? Currently git-based — need finer-grained audit logs?</li>
+<li><strong>Cross-skill memory migration</strong>: friend updates recorded in skill A (Moments) — should skill B (calendar) read them? Feels like a unified “personal knowledge graph” layer, not duplication</li>
+<li><strong>Claude Skill vs Anthropic Agent SDK</strong>: when to use Skill vs code-level Agent SDK? Zhenyu currently prefers Skill (low-code, user-maintainable), but complex state management may favor SDK</li>
+</ul>
+<h3 id="sources">Sources</h3>
+<ul>
+<li>private personal automation project (WeChat Moments interaction) — first full instance</li>
+</ul>
+<h3 id="related-pages">Related Pages</h3>
+<ul>
+<li><a href="/en/research/macos-native-app-automation/" class="wikilink" data-wikilink="macos-桌面应用自动化">macOS Native App Automation</a> — underlying automation tech for the current skill</li>
+<li><a href="/en/research/ai-tools-and-productivity/" class="wikilink" data-wikilink="ai工具与效率提升">AI Tools &amp; Productivity</a> — broader AI productivity skill</li>
+<li></li>
+</ul>  </div>  </article>  </main> <footer class="site-footer" data-astro-cid-37fxchfa> <p data-astro-cid-37fxchfa>
+© 2026 Zhenyu He · Jobs Stroustrup
+        · <a href="/atom.xml" data-astro-cid-37fxchfa>RSS</a>
+· <a href="/research/atom.xml" data-astro-cid-37fxchfa>Research RSS</a>
+· <a href="/archive/" data-astro-cid-37fxchfa>Archive (frozen 2021-10)</a> </p> <p class="build-date" data-astro-cid-37fxchfa>
+Built 2026-07-12 </p> </footer> </body> </html> 

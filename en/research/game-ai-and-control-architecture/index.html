@@ -1,0 +1,80 @@
+<!DOCTYPE html><html lang="en" data-collection="research" data-astro-cid-37fxchfa> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/favicon-180.png"><link rel="manifest" href="/site.webmanifest"><link rel="preload" as="font" type="font/woff2" crossorigin href="/_astro/eb-garamond-latin-700-normal.woff2" onerror="this.remove()"><link rel="preload" as="font" type="font/woff2" crossorigin href="/_astro/inter-latin-400-normal.woff2" onerror="this.remove()"><title>Game AI &amp; Control Architecture</title><meta name="description" content="Game AI &#38; Control Architecture"><link rel="canonical" href="https://jobsstroustrup.github.io/en/research/game-ai-and-control-architecture/"><meta property="og:title" content="Game AI &#38; Control Architecture"><meta property="og:description" content="Game AI &#38; Control Architecture"><meta property="og:type" content="website"><meta property="og:url" content="https://jobsstroustrup.github.io/en/research/game-ai-and-control-architecture/"><meta property="og:site_name" content="Zhenyu He · Jobs Stroustrup"><meta property="og:image" content="https://jobsstroustrup.github.io/hero/sgs-hero-1280.jpg"><meta property="og:locale" content="en_US"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Game AI &#38; Control Architecture"><meta name="twitter:description" content="Game AI &#38; Control Architecture"><meta name="twitter:image" content="https://jobsstroustrup.github.io/hero/sgs-hero-1280.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Zhenyu He","alternateName":"Jobs Stroustrup","jobTitle":"Researcher","url":"https://jobsstroustrup.github.io/","image":"https://jobsstroustrup.github.io/hero/sgs-hero-1280.jpg","description":"Physicist-turned-researcher-and-entrepreneur. Trained at PKU, Caltech, and UC Berkeley; based in Berkeley, CA.","alumniOf":[{"@type":"CollegeOrUniversity","name":"Peking University","url":"https://english.pku.edu.cn/"},{"@type":"CollegeOrUniversity","name":"University of California, Berkeley","url":"https://www.berkeley.edu/"}],"knowsAbout":["Atmospheric physics","Large-eddy simulation","Bayesian inverse problems","Satellite remote sensing","Climate dynamics","High-performance computing","Methane MRV","Nuclear-winter modelling","Tropical convection","Walker circulation"],"worksFor":{"@type":"Organization","name":"TerraByte Intelligence","description":"Co-Founder, TerraByte Intelligence (YC Spring 2026)"},"knowsLanguage":["en","zh"],"sameAs":["https://github.com/JobsStroustrup","https://orcid.org/0009-0005-1942-9469","https://scholar.google.com/citations?user=OK6sAb0AAAAJ"]}</script><link rel="alternate" hreflang="en" href="https://jobsstroustrup.github.io/en/research/game-ai-and-control-architecture/"><link rel="alternate" hreflang="zh" href="https://jobsstroustrup.github.io/zh/research/game-ai-and-control-architecture/"><link rel="alternate" hreflang="x-default" href="https://jobsstroustrup.github.io/en/research/game-ai-and-control-architecture/"><meta property="og:type" content="article"> <meta property="og:title" content="Game AI &#38; Control Architecture"> <meta property="og:description" content="Game AI &#38; Control Architecture"> <meta property="og:locale" content="en_US"> <meta property="article:author" content="Zhenyu He · Jobs Stroustrup"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="Game AI &#38; Control Architecture"> <meta name="twitter:description" content="Game AI &#38; Control Architecture"> <link rel="stylesheet" media="print" href="/styles/research-print.css"> <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"Game AI & Control Architecture","author":{"@type":"Person","name":"Zhenyu He · Jobs Stroustrup"},"inLanguage":"en"}</script> <link rel="stylesheet" href="/_astro/BaseLayout.j-OfamCa.css">
+<link rel="stylesheet" href="/_astro/ResearchLayout.DDpCI2AE.css"></head> <body data-astro-cid-37fxchfa>  <a href="#main" class="skip-nav" data-astro-cid-37fxchfa>Skip to main content</a> <header class="site-nav" data-astro-cid-37fxchfa> <a href="/en/" class="wordmark" data-astro-cid-37fxchfa>Zhenyu He · Jobs Stroustrup</a> <nav aria-label="Primary navigation" data-astro-cid-37fxchfa> <ul class="nav-list" data-astro-cid-37fxchfa> <li data-astro-cid-37fxchfa> <a href="/en/research/" data-astro-cid-37fxchfa>Research</a> </li><li data-astro-cid-37fxchfa> <a href="/en/blog/" data-astro-cid-37fxchfa>Blog</a> </li><li data-astro-cid-37fxchfa> <a href="/en/portfolio/" data-astro-cid-37fxchfa>Portfolio</a> </li><li data-astro-cid-37fxchfa> <a href="/en/about/" data-astro-cid-37fxchfa>About</a> </li><li data-astro-cid-37fxchfa> <a href="/en/archive/" data-astro-cid-37fxchfa>Archive</a> </li> </ul> </nav> <div class="lang-switch" role="group" aria-label="Language switcher" data-astro-cid-su6xvggn> <a href="/en/research/game-ai-and-control-architecture/" class="on" aria-current="true" lang="en" onclick="document.cookie='pref-lang=en;path=/;max-age=31536000;samesite=lax';" data-astro-cid-su6xvggn>English</a> <span class="sep" aria-hidden="true" data-astro-cid-su6xvggn>·</span> <a href="/zh/research/%E6%B8%B8%E6%88%8Fai%E4%B8%8E%E6%8E%A7%E5%88%B6%E6%9E%B6%E6%9E%84/" class lang="zh" onclick="document.cookie='pref-lang=zh;path=/;max-age=31536000;samesite=lax';" data-astro-cid-su6xvggn>中文</a> </div> </header>  <main id="main" class="site-main" data-astro-cid-37fxchfa>   <a href="#content" class="research-skip" data-astro-cid-63t2xjvj>Skip to article</a> <article class="research" lang="en" id="content" data-astro-cid-63t2xjvj> <header class="research-header" data-astro-cid-63t2xjvj> <p class="research-eyebrow" data-astro-cid-63t2xjvj> Research Note  </p> <h1 class="research-title" data-astro-cid-63t2xjvj>Game AI &amp; Control Architecture</h1>  <p class="research-meta" data-astro-cid-63t2xjvj> <span class="research-author" data-astro-cid-63t2xjvj>Zhenyu He · Jobs Stroustrup</span>  <span class="research-meta-sep research-meta-screen-only" aria-hidden="true" data-astro-cid-63t2xjvj>·</span> <span class="research-readtime research-meta-screen-only" data-astro-cid-63t2xjvj> 3 min read </span> </p>   </header> <hr class="research-rule" aria-hidden="true" data-astro-cid-63t2xjvj> <div class="research-body" data-astro-cid-63t2xjvj>  <h3 id="proficiency">Proficiency</h3>
+<p>Proficient</p>
+<h3 id="description">Description</h3>
+<p><strong>Multi-layer decision architecture (reactive + deliberative hybrid)</strong></p>
+<ul>
+<li>Threat detection → immediate reactive avoidance</li>
+<li>No-threat → plan-validate-execute pipeline (deliberative)</li>
+<li>Maps to classical AI architectures: Brooks subsumption / Boyd OODA</li>
+<li>Smooth switching between high-frequency avoidance and low-frequency long-horizon pursuit</li>
+</ul>
+<p><strong>Stateful AI controller</strong></p>
+<ul>
+<li>State machine + plan persistence + external-condition-triggered abort/reset</li>
+<li>Distinct from memoryless reactive control: the agent has memory, executes multi-frame plans, yet retains an abort channel</li>
+<li>Avoids both “rethink every frame” (compute-wasteful) and “mindlessly run the locked plan” (brittle)</li>
+</ul>
+<p><strong>Adaptive hyperparameters</strong></p>
+<ul>
+<li>Density-adaptive search radius: environment state → dynamic FOV (focus in crowded areas, wide lens when sparse)</li>
+<li>Failure-triggered exploration expansion (<code>searchtime</code>): when repeatedly no feasible plan, auto-widen the search space to escape near-sighted local minima</li>
+<li>Kindred idea: adaptive exploration / temperature annealing in RL</li>
+</ul>
+<p><strong>Two-sided candidate filtering (cost-benefit pruning)</strong></p>
+<ul>
+<li>Not just an upper bound (“targets I can eat”) but also a lower bound (“chasing this costs more than the payoff”)</li>
+<li>Economic pruning — each action is scored by ROI; unworthy ones dropped</li>
+<li>Transferable to: trading strategies, budget-limited agent planning, resource-constrained scheduling</li>
+</ul>
+<p><strong>Engine reverse-engineering and white-box modeling</strong></p>
+<ul>
+<li>Fully reverse-engineer external systems (game engines, external APIs, third-party libs) into an internally-reproducible white-box model</li>
+<li>Foundation for precise rollout simulation, consequence modeling, agent pretraining</li>
+<li>Example: reproducing <code>kernel.py</code>’s eject/absorb physics inside the agent so forward simulation matches the real engine frame-by-frame</li>
+</ul>
+<p><strong>Forward simulation / rollout verification</strong></p>
+<ul>
+<li>No reliance on heuristic scores — actually run N frames of engine simulation and check whether the plan fails mid-flight</li>
+<li>Lineage: Monte-Carlo tree search, AlphaGo/MuZero rollout, model-based RL</li>
+<li>Current naive form: 200-frame sequential simulation; extensible to MCTS parallel rollout</li>
+</ul>
+<p><strong>OOP game-entity modeling</strong></p>
+<ul>
+<li>Standard game-object model: pos / veloc / radius / id / dead / collide_group</li>
+<li>Companion methods: move / distance_from / area / collide / stay_in_bounds / limit_speed</li>
+<li>Transferable to: physics simulation, robotics simulation, multi-body systems</li>
+</ul>
+<p><strong>Opponent modeling &#x26; meta-game</strong></p>
+<ul>
+<li>Read the opponent’s strategy code → understand decision pattern → design targeted counter-play</li>
+<li>Game-theoretic second-order thinking: not just “my optimal move” but “how the opponent adapts after anticipating my move”</li>
+<li>Transferable to: adversarial ML (robustness), competitive business analysis, game-theory applications</li>
+</ul>
+<p><strong>Benchmark culture</strong></p>
+<ul>
+<li>Construct baseline gradients: brownian motion (weakest) → simple heuristics → full AI (strongest)</li>
+<li>The engineering discipline of “passes which baselines to count as decent”</li>
+<li>Transfers to every situation needing agent/model evaluation</li>
+</ul>
+<h3 id="relationship-to-other-skills">Relationship to Other Skills</h3>
+<ul>
+<li>Depends on <a href="/en/research/algorithms-and-data-structures/" class="wikilink" data-wikilink="算法与数据结构">Algorithms &amp; Data Structures</a> (data structures, search, geometry) — those are the concrete implementation tools</li>
+<li>This skill operates at the <strong>architecture / thinking</strong> level — “how do we compose these algorithms into a real-time decision agent?”</li>
+<li>Strong resonance with <a href="/en/research/claude-code-skill-authoring-methodology/" class="wikilink" data-wikilink="claude-skill开发方法论">Claude Code Skill Authoring Methodology</a>:
+<ul>
+<li>Both are variants of human-in-the-loop + data flywheel + tiered rules + structured memory</li>
+<li>A line of thought: Osmo AI (2019) → Claude Skill agent design (2026)</li>
+<li>Both emphasize “plan-validate-execute” pipelines over single-step reactive logic</li>
+</ul>
+</li>
+</ul>
+<h3 id="used-in">Used In</h3>
+<ul>
+<li> — full instance, 5-layer architecture (search mechanics / parameter tuning / strategy orchestration / engine RE / opponent spectrum)</li>
+</ul>  </div>  </article>  </main> <footer class="site-footer" data-astro-cid-37fxchfa> <p data-astro-cid-37fxchfa>
+© 2026 Zhenyu He · Jobs Stroustrup
+        · <a href="/atom.xml" data-astro-cid-37fxchfa>RSS</a>
+· <a href="/research/atom.xml" data-astro-cid-37fxchfa>Research RSS</a>
+· <a href="/archive/" data-astro-cid-37fxchfa>Archive (frozen 2021-10)</a> </p> <p class="build-date" data-astro-cid-37fxchfa>
+Built 2026-07-12 </p> </footer> </body> </html> 

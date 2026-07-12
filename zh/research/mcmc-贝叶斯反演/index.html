@@ -1,0 +1,180 @@
+<!DOCTYPE html><html lang="zh" data-collection="research" data-astro-cid-37fxchfa> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="alternate icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/favicon-180.png"><link rel="manifest" href="/site.webmanifest"><link rel="preload" as="font" type="font/woff2" crossorigin href="/_astro/eb-garamond-latin-700-normal.woff2" onerror="this.remove()"><link rel="preload" as="font" type="font/woff2" crossorigin href="/_astro/inter-latin-400-normal.woff2" onerror="this.remove()"><title>MCMC 与贝叶斯反演</title><meta name="description" content="MCMC 与贝叶斯反演"><link rel="canonical" href="https://jobsstroustrup.github.io/zh/research/mcmc-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%8F%8D%E6%BC%94/"><meta property="og:title" content="MCMC 与贝叶斯反演"><meta property="og:description" content="MCMC 与贝叶斯反演"><meta property="og:type" content="website"><meta property="og:url" content="https://jobsstroustrup.github.io/zh/research/mcmc-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%8F%8D%E6%BC%94/"><meta property="og:site_name" content="Zhenyu He · Jobs Stroustrup"><meta property="og:image" content="https://jobsstroustrup.github.io/hero/sgs-hero-1280.jpg"><meta property="og:locale" content="zh_CN"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="MCMC 与贝叶斯反演"><meta name="twitter:description" content="MCMC 与贝叶斯反演"><meta name="twitter:image" content="https://jobsstroustrup.github.io/hero/sgs-hero-1280.jpg"><script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Zhenyu He","alternateName":"Jobs Stroustrup","jobTitle":"Researcher","url":"https://jobsstroustrup.github.io/","image":"https://jobsstroustrup.github.io/hero/sgs-hero-1280.jpg","description":"物理学背景的研究者与创业者；曾在 PKU、Caltech、UC Berkeley 学习，现居 Berkeley, CA。","alumniOf":[{"@type":"CollegeOrUniversity","name":"Peking University","url":"https://english.pku.edu.cn/"},{"@type":"CollegeOrUniversity","name":"University of California, Berkeley","url":"https://www.berkeley.edu/"}],"knowsAbout":["Atmospheric physics","Large-eddy simulation","Bayesian inverse problems","Satellite remote sensing","Climate dynamics","High-performance computing","Methane MRV","Nuclear-winter modelling","Tropical convection","Walker circulation"],"worksFor":{"@type":"Organization","name":"TerraByte Intelligence","description":"TerraByte Intelligence 联合创始人（YC Spring 2026）"},"knowsLanguage":["en","zh"],"sameAs":["https://github.com/JobsStroustrup","https://orcid.org/0009-0005-1942-9469","https://scholar.google.com/citations?user=OK6sAb0AAAAJ"]}</script><link rel="alternate" hreflang="en" href="https://jobsstroustrup.github.io/en/research/mcmc-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%8F%8D%E6%BC%94/"><link rel="alternate" hreflang="zh" href="https://jobsstroustrup.github.io/zh/research/mcmc-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%8F%8D%E6%BC%94/"><link rel="alternate" hreflang="x-default" href="https://jobsstroustrup.github.io/en/research/mcmc-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%8F%8D%E6%BC%94/"><meta property="og:type" content="article"> <meta property="og:title" content="MCMC 与贝叶斯反演"> <meta property="og:description" content="MCMC 与贝叶斯反演"> <meta property="og:locale" content="zh_CN"> <meta property="article:author" content="Zhenyu He · Jobs Stroustrup"> <meta name="twitter:card" content="summary"> <meta name="twitter:title" content="MCMC 与贝叶斯反演"> <meta name="twitter:description" content="MCMC 与贝叶斯反演"> <link rel="stylesheet" media="print" href="/styles/research-print.css"> <script type="application/ld+json">{"@context":"https://schema.org","@type":"ScholarlyArticle","headline":"MCMC 与贝叶斯反演","author":{"@type":"Person","name":"Zhenyu He · Jobs Stroustrup"},"inLanguage":"zh"}</script> <link rel="stylesheet" href="/_astro/BaseLayout.j-OfamCa.css">
+<link rel="stylesheet" href="/_astro/ResearchLayout.DDpCI2AE.css"></head> <body data-astro-cid-37fxchfa>  <a href="#main" class="skip-nav" data-astro-cid-37fxchfa>跳过导航至主内容</a> <header class="site-nav" data-astro-cid-37fxchfa> <a href="/zh/" class="wordmark" data-astro-cid-37fxchfa>Zhenyu He · Jobs Stroustrup</a> <nav aria-label="主导航" data-astro-cid-37fxchfa> <ul class="nav-list" data-astro-cid-37fxchfa> <li data-astro-cid-37fxchfa> <a href="/zh/research/" data-astro-cid-37fxchfa>研究</a> </li><li data-astro-cid-37fxchfa> <a href="/zh/blog/" data-astro-cid-37fxchfa>博客</a> </li><li data-astro-cid-37fxchfa> <a href="/zh/portfolio/" data-astro-cid-37fxchfa>作品</a> </li><li data-astro-cid-37fxchfa> <a href="/zh/about/" data-astro-cid-37fxchfa>关于</a> </li><li data-astro-cid-37fxchfa> <a href="/zh/archive/" data-astro-cid-37fxchfa>存档</a> </li> </ul> </nav> <div class="lang-switch" role="group" aria-label="Language switcher" data-astro-cid-su6xvggn> <a href="/en/research/mcmc-and-bayesian-inversion/" class lang="en" onclick="document.cookie='pref-lang=en;path=/;max-age=31536000;samesite=lax';" data-astro-cid-su6xvggn>English</a> <span class="sep" aria-hidden="true" data-astro-cid-su6xvggn>·</span> <a href="/zh/research/mcmc-%E8%B4%9D%E5%8F%B6%E6%96%AF%E5%8F%8D%E6%BC%94/" class="on" aria-current="true" lang="zh" onclick="document.cookie='pref-lang=zh;path=/;max-age=31536000;samesite=lax';" data-astro-cid-su6xvggn>中文</a> </div> </header>  <main id="main" class="site-main" data-astro-cid-37fxchfa>   <a href="#content" class="research-skip" data-astro-cid-63t2xjvj>Skip to article</a> <article class="research" lang="zh" id="content" data-astro-cid-63t2xjvj> <header class="research-header" data-astro-cid-63t2xjvj> <p class="research-eyebrow" data-astro-cid-63t2xjvj> 研究笔记 · Research Note  </p> <h1 class="research-title" data-astro-cid-63t2xjvj>MCMC 与贝叶斯反演</h1>  <p class="research-meta" data-astro-cid-63t2xjvj> <span class="research-author" data-astro-cid-63t2xjvj>Zhenyu He · Jobs Stroustrup</span>  <span class="research-meta-sep research-meta-screen-only" aria-hidden="true" data-astro-cid-63t2xjvj>·</span> <span class="research-readtime research-meta-screen-only" data-astro-cid-63t2xjvj> 阅读约 5 分钟 </span> </p>   </header> <hr class="research-rule" aria-hidden="true" data-astro-cid-63t2xjvj> <div class="research-body" data-astro-cid-63t2xjvj>  <h1 id="mcmc-与贝叶斯反演-mcmc--bayesian-inversion">MCMC 与贝叶斯反演 (MCMC &#x26; Bayesian Inversion)</h1>
+<h3 id="熟练度">熟练度</h3>
+<p>熟练</p>
+<h3 id="描述">描述</h3>
+<p><strong>MCMC 采样</strong></p>
+<ul>
+<li>使用 <code>emcee</code> (affine-invariant ensemble sampler, Foreman-Mackey 2013) 做真实问题上的后验采样</li>
+<li>处理 log-space 重参数化（<code>log10_alpha</code> / <code>log10_sigma</code>）避免尺度跨度问题</li>
+<li>Trace plot + corner plot 做链诊断</li>
+<li>MCMC 多进程与 BLAS 线程冲突的工程处理（<code>OMP_NUM_THREADS=1</code> 等 8 个环境变量）</li>
+</ul>
+<p><strong>高斯过程回归 (GP)</strong></p>
+<ul>
+<li>RBF kernel + 超参数 MCMC 层级化处理（超参数 alpha、sigma 通过 MCMC 采样）</li>
+<li>Spatial × Temporal separable kernel <code>KS ⊗ KT</code> 避免 O(N³) 全联合协方差</li>
+<li>HEALPix 球面网格作为 GP 的 spatial grid（healpy）</li>
+<li>Snapshot-level 与 pixelwise 两种后验协方差的手写闭式实现</li>
+</ul>
+<p><strong>反问题正则化参数选择</strong></p>
+<ul>
+<li>L-Curve method</li>
+<li>L-Curve Curvature method</li>
+<li>Generalized Cross Validation (GCV) —— 手写 Golub 1979 定义的目标函数</li>
+<li>Morozov discrepancy principle</li>
+<li>在 Hansen 书 gravity problem 例子和真实 DSCOVR 数据上都做过四种方法的对比</li>
+</ul>
+<p><strong>Numerical Linear Algebra</strong></p>
+<ul>
+<li><code>scipy.linalg.solve(..., assume_a="pos")</code> Cholesky 求解避免显式 inv</li>
+<li><code>np.linalg.slogdet</code> 代替 <code>log(det)</code> 防下溢</li>
+<li>SVD 分解 + Tikhonov 正则化（MATLAB <code>csvd</code> 等）</li>
+<li>大矩阵的条件数分析</li>
+</ul>
+<p><strong>工具链</strong></p>
+<ul>
+<li>Python：emcee、scipy、numpy、healpy、astropy、pandas</li>
+<li>MATLAB：方法验证 + Hansen 书数值复现</li>
+<li>Mathematica：符号推导 / 概率形式化验算</li>
+</ul>
+<h3 id="自学路径值得强调">自学路径（值得强调）</h3>
+<p>2021 年独立读完 <strong>Hansen《Discrete Inverse Problems》</strong> + <strong>Bishop PRML</strong> + <strong>Golub 1979 原始 GCV 论文</strong>，并在 repo 中逐步复现教科书和原始论文里的数值实验——“教科书 → 原始论文 → 复现 → 应用到新问题”的链路。</p>
+<h3 id="-caltech-dscovr-4-原创贡献-2021-2022-yuk-yung--king-fai-li-指导">🌟 Caltech DSCOVR 4 原创贡献 (2021-2022, Yuk Yung + King-Fai Li 指导)</h3>
+<h4 id="-贡献-c-发现并修正-hansen-教科书公式错误-σ-vs-σ-80-偏差">🌟 贡献 (c): 发现并修正 Hansen 教科书公式错误 (σ² vs σ⁴, 80× 偏差)</h4>
+<p><strong>核心成就</strong>: 作为本科生, 用独立 SVD + filter factor 推导, 在 Hansen classic 的 <em>Discrete Inverse Problems</em> (SIAM 2010) 这种 foundational textbook 中发现<strong>公式级 bug</strong> — 不是 typo, 而是导致<strong>数值结果相差 ~80× 的实质错误</strong>。</p>
+<p><strong>数值对比</strong> (同样 toy model + PC2 数据):</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Formula</th><th>Toy model λ</th><th>PC2 λ</th><th>准确性</th></tr></thead><tbody><tr><td><strong>Hansen 学生正确版 (σ⁴)</strong></td><td><strong>0.0251</strong> ✓</td><td><strong>0.0575</strong> ✓</td><td>与 naked-eye elbow + axis-image 下理论值一致</td></tr><tr><td><strong>Hansen 书本错误版 (σ²)</strong></td><td><strong>1.995</strong> ✗</td><td><strong>1.995</strong> ✗</td><td><strong>80× overestimate, 完全失败</strong></td></tr></tbody></table>
+<p><strong>创新发现</strong>: 独立发现 Hansen 未讨论的 <strong>L-curve axis-scale ambiguity</strong>:</p>
+<blockquote>
+<p><em>“Hansen didn’t talk about whether we should control the units of x-axis and y-axis of L-curve to be the same. In his book, he showed two L-curve figures, but both didn’t control the units to be the same.”</em> (2022-01-08 发现)</p>
+</blockquote>
+<p><strong>3-step self-correction cycle</strong> (11/29 → 12/06 → 01/08): 自己发现公式错 → 假设 accumulation of errors → refute + 正确归因为 axis-scale ambiguity — 体现 intellectual honesty + iteration</p>
+<p><strong>物理证据纪律</strong>: 同时保留 <strong>Hansen 原版 PDF (分母 σ²) + Hansen 学生正确版 PDF (分母 σ⁴) 并列在 <code>LCurve_HansenMistake_WeRectify_Test/</code> 目录</strong> — “inconvenient-evidence retention” 精神, 对应 </p>
+<p><strong>社区贡献</strong>: 向学术社区提出 <strong>3 个 open questions</strong> — (1) 应否 control L-curve axes 等单位? (2) a senior collaborator 的 elbow λ=1e-3 结论是否为 scale-artifact? (3) 应用 L-curve 时在哪些情况下调节, 如何调?</p>
+<h4 id="-贡献-b-pre-whitening-l-curve-创新--拒绝-methodological-engineering-pressure-的诚实决策">🌟 贡献 (b): Pre-whitening L-curve 创新 + 拒绝 methodological-engineering pressure 的诚实决策</h4>
+<p><strong>技术创新</strong>: 在 RBF kernel (non-diagonal covariance <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>) 下, 变换到白化空间:
+<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.2392em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.5834em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1/2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1166em;"><span></span></span></span></span></span></span><span class="mord mathnormal">x</span><span class="mpunct">,</span><span class="mspace" style="margin-right:1em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.2392em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.5834em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">e</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1/2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1166em;"><span></span></span></span></span></span></span><span class="mord mathnormal" style="margin-right:0.0359em;">y</span><span class="mpunct">,</span><span class="mspace" style="margin-right:1em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1.1614em;vertical-align:-0.1166em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.5834em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">e</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1/2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1166em;"><span></span></span></span></span></span></span><span class="mord mathnormal">A</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0448em;"><span style="top:-2.5834em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span><span style="top:-3.2198em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1/2</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.1166em;"><span></span></span></span></span></span></span></span></span></span></p>
+<p><strong>问题诊断</strong>: 发现 <strong>L-curve 在非对角 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 下 x/y 值不单调</strong> → structural limit: L-curve 对应 pure Tikhonov, non-diagonal <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 不能 derive 到 Tikhonov form; “modified L-curve” 对 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">e</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> priors 过度敏感。</p>
+<p><strong>独立判断 — methodological restraint (2022-01-23 group meeting verbatim)</strong>:</p>
+<p>(Declined to tune <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">a</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>, <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0576em;">S</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.1514em;"><span style="top:-2.55em;margin-left:-0.0576em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">e</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> priors to engineer a target λ — methodological commitment.)</p>
+<p><strong>Methodology maturity 证据</strong>: “我自己提议的方法, 我自己系统诊断它的 limitation” — 本科生拒绝 advisor 隐含 preference 来凑 λ 数值, research integrity signature。与  Moment 3 对应。</p>
+<h4 id="贡献-a-hardened-balancing-principle-hbp-90-段数学展开">贡献 (a): Hardened Balancing Principle (HBP) 90-段数学展开</h4>
+<p><strong>理论框架</strong>: 从 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9658em;vertical-align:-0.1944em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.0359em;">ψ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7713em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1</span></span></span></span> (Tikhonov) 出发, 经 Bauer 2007 exponential concentration assumption → 自动 parameter selection 的 HBP <code>λ_{n+}</code> 公式。</p>
+<p><strong>系统 stress test</strong>:</p>
+<ul>
+<li>Hansen gravity problem (500-instance, 条件数 ~2.88e28 vs reported ~1.54e5)</li>
+<li>Golub 1979 Laplace (条件数达 2.88e28)</li>
+<li>3-point linear regression (Prof. King-Fai Li × Zhenyu Bayesian 化闭式解交叉验证)</li>
+<li>DSCOVR real PC2 time series</li>
+</ul>
+<p><strong>结论</strong>: HBP 表现最好, 不需 prior knowledge of noise level δ 或 tuning constant κ</p>
+<p><strong>输出</strong>: <code>internal-only manuscript</code> 的 <strong>90-段数学 section writeup</strong> — 相当于独立技术笔记/教程规模, 含从 Tikhonov 到 HBP 的完整推导。</p>
+<h4 id="贡献-d-noise-vector-方向影响正则化方法性能-独创发现">贡献 (d): Noise Vector 方向影响正则化方法性能 (独创发现)</h4>
+<p><strong>原始发现 (2021-09-20 verbatim)</strong>:</p>
+<blockquote>
+<p><em>“When I did numerical tests on L-Curve, GCV etc., <strong>I found out the direction of the noise vector plays a big role</strong> in the performance of statistical criteria. <strong>I did a literature search and it seems nobody has studied this topic.</strong>”</em></p>
+</blockquote>
+<p><strong>4-method failure-mode catalog</strong>:</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Method</th><th>失效条件</th></tr></thead><tbody><tr><td>L-curve</td><td>|x_sol| 大, 或 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">dd</span></span></span></span> 近 EV1</td></tr><tr><td>Kawahara Bayesian</td><td>|x_sol| 大 (5/5 fail for x_sol=[10,1])</td></tr><tr><td>GCV</td><td><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span></span></span></span> 近 EV1 且 <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">dd</span></span></span></span> 近 EV2</td></tr><tr><td>Discrepancy principle</td><td>总 work, 但引入 systematic error</td></tr></tbody></table>
+<p><strong>源头偶然发现</strong>: Golub 1979 GCV 复现 (condition 2.88e28) 时, 5 instance 中第 4 个 λ_GCV 完全不同 → Hansen gravity 500-instance 验证汇聚 → 系统化为贡献 (d)。<strong>独立发现 + literature gap awareness</strong> (与 HBP later extended by a subsequent collaborator to PC1/PC4 clouds 形成方法影响力链)。</p>
+<p><strong>跨语言 fluency</strong> (本单个 11-month 项目):</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Language</th><th>承担任务</th></tr></thead><tbody><tr><td><strong>IDL</strong></td><td>OOP MCMC class (继承 Yuk Yung lab convention)</td></tr><tr><td><strong>MATLAB</strong></td><td>Hansen 书 gravity problem replication + csvd</td></tr><tr><td><strong>Python</strong></td><td>Kawahara CUDA library bootstrap (remote workstation, Anaconda) + emcee + healpy</td></tr><tr><td><strong>Mathematica</strong></td><td>symbolic curvature 推导 (calculation_4_cal_deriva.nb + calculation_5_cal_deriva.nb)</td></tr><tr><td><strong>R</strong></td><td>Metropolis-Hastings baseline for cross-validation</td></tr></tbody></table>
+<p><strong>29 group_meeting pptx</strong> sustained trajectory (Mar 2021 → Mar 2022), 与 Walker paper v3→v6 drafting (Sep-Oct 2021) + nwp_hw 4 作业 (Oct-Dec 2021) 构成  Moment 4 的 “3-track parallel Sep-Dec 2021” evidence。</p>
+<h3 id="在哪些经历中用到">在哪些经历中用到</h3>
+<ul>
+<li><a href="/zh/research/pku-undergraduate-research/" class="wikilink" data-wikilink="pku-undergraduate-research">PKU-Undergraduate-Research</a> — MCMC Retrieval Methods 项目 (2021.03—2022.03), Caltech PI Yuk Yung + UCR King-Fai Li 合作; <strong>29 group_meeting pptx / 5 种编程语言</strong> (IDL + MATLAB + Python + Mathematica + R)</li>
+<li><a href="/zh/portfolio/caltech-dscovr-research/" class="wikilink" data-wikilink="caltech-dscovr-research">Caltech-DSCOVR-Research</a> — 从 PKU-Undergraduate-Research.md 拆出的独立 35k words project experience page, 含 4 原创贡献 deep-dive</li>
+<li> — 完整研究代码 + 学习笔记 repo (2021-09-13 last commit, pre-Caltech 4 贡献 finalization)</li>
+<li>可以迁移到: 任何 ill-posed inverse problem (气候反演 / 医学成像 / 地球物理 / 系外行星 spin-mapping)</li>
+</ul>
+<h3 id="方法论-concept-页">方法论 concept 页</h3>
+<ul>
+<li><a href="/zh/research/反问题与正则化/" class="wikilink" data-wikilink="反问题与正则化">反问题与正则化</a> — 频率学派视角</li>
+<li><a href="/zh/research/gp-贝叶斯反演/" class="wikilink" data-wikilink="gp-贝叶斯反演">GP-贝叶斯反演</a> — 贝叶斯视角</li>
+<li><a href="/zh/research/hardened-balancing-principle/" class="wikilink" data-wikilink="hardened-balancing-principle">Hardened-Balancing-Principle</a> — HBP 90-段独立 concept, 从 Bauer 2007 出发的 automatic regularization parameter selection</li>
+<li><a href="/zh/research/l-curve-axis-scale-ambiguity/" class="wikilink" data-wikilink="l-curve-axis-scale-ambiguity">L-Curve-Axis-Scale-Ambiguity</a> — Hansen σ²/σ⁴ 80× bug 独立 concept, L-curve axis-scale 单位处理的 open question</li>
+</ul>
+<hr>  </div>  </article>  </main> <footer class="site-footer" data-astro-cid-37fxchfa> <p data-astro-cid-37fxchfa>
+© 2026 Zhenyu He · Jobs Stroustrup
+        · <a href="/atom.xml" data-astro-cid-37fxchfa>RSS</a>
+· <a href="/research/atom.xml" data-astro-cid-37fxchfa>Research RSS</a>
+· <a href="/archive/" data-astro-cid-37fxchfa>Archive (frozen 2021-10)</a> </p> <p class="build-date" data-astro-cid-37fxchfa>
+Built 2026-07-12 </p> </footer> </body> </html> 
